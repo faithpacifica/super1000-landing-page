@@ -1,0 +1,93 @@
+<template>
+<div class="error pt-[268px] pb-[148px]">
+  <div class=" container relative ">
+    <div class="error_img w-[100%] flex flex-center-center ">
+      <img src="@/assets/images/error.png" alt="">
+    </div>
+
+    <div class="flex flex-col flex-center-center pt-[24rem]">
+      <h2 class="font-['Poppins'] font-semibold text-[48px] leading-[62px] text-[#373A43] mb-[54px]">
+        Ehh, ushbu sahifa topilmadi 😔
+        <!-- {{ $t('title.error') }}    -430:gap-[35rem] -400:gap-[33rem] gap-[70rem]-->
+      </h2>
+
+      <p class="font-['Inter'] text-[15px] leading-[28px] text-[#22343E] mb-[24px]">
+        Iltimos qayta urinib ko‘ring
+      </p>
+
+      <nuxt-link to="/" class="flex items-center bg-[#6C5DD3] rounded-[8px] py-[18px] pl-[38.5px] pr-[36px]">
+        <Icon name="home_icon" class="home_icon" />
+        <span class="font-['Inter'] font-medium text-[15px] leading-[20px] text-white ml-[10px]">
+          Bosh sahifaga qaytish
+        </span>
+      </nuxt-link>
+    </div>
+
+
+    <img class="mix-loader absolute left-[14%] top-[7%]" src="@/assets/images/icon-blue-round.png" />
+    <img class=" loader absolute right-[7%] top-[85%]" src="@/assets/images/icon-green-half.png" />
+    <img class="pulsating-star absolute left-[0%] bottom-[25%]" src="@/assets/images/icon-star.png" />
+    <img class="mix-loader absolute right-[0%] top-[15%]" src="@/assets/images/icon-yellow-round.png" />
+  </div>
+</div>
+</template>
+
+<script>
+
+export default {
+  components: {
+
+  },
+  layout: 'empty',
+}
+</script>
+
+<style lang="scss" scoped>
+// ANIMATION
+  .pulsating-star {
+    position: absolute;
+    animation: animate 8s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: scale(0.3) translate(0) rotate(0);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1.5) translate(90px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+  .loader {
+    animation: spinner 4s linear infinite;
+  }
+
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.mix-loader {
+  animation: mix-spinner 4s linear infinite;
+}
+
+@keyframes mix-spinner {
+  0% {
+    transform: rotate(0deg);
+    transform: scale(0.3);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform: scale(1.1);
+  }
+}
+</style>

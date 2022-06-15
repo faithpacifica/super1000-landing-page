@@ -1,12 +1,14 @@
+
+
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
+
   server: {
-    port: 3000, // default: 3005
+    port: 3005, // default: 3005
     host: '0.0.0.0', // default: localhost
   },
   ssr: false,
   head: {
-    title: 'Starter project',
+    title: 'super 1000',
     htmlAttrs: {
       lang: 'en',
     },
@@ -16,37 +18,44 @@ export default {
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.png' }],
   },
 
-  // Global CSS: https://go.nuxtjs.dev/config-css
+
   css: ['@/assets/style/style.scss'],
 
-  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
 
-  // Auto import components: https://go.nuxtjs.dev/config-components
-  components: false,
+  plugins: [
+    {
+      src: "~/plugins/vue-slick-carousel.js",
+    },
+  ],
 
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  components: true,
+
 
   buildModules: [
-    // https://go.nuxtjs.dev/eslint
+    // '@nuxtjs/color-mode',
     [
       '@nuxtjs/eslint-module',
-      {
-        threads: true,
-      },
     ],
-    // https://go.nuxtjs.dev/stylelint
+
     '@nuxtjs/stylelint-module',
     '@nuxtjs/tailwindcss',
   ],
 
-  // Modules: https://go.nuxtjs.dev/config-modules
+  // tailwindcss: {
+  //   jit: true,
+  //   // add '~tailwind.config` alias
+  //   exposeConfig: true
+  // },
+  // colorMode: {
+  //   classSuffix: ""
+  // },
+
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // '@nuxtjs/color-mode',
     [
       'nuxt-i18n',
       {
@@ -60,12 +69,12 @@ export default {
             file: 'uz.js',
           },
           {
-            code: 'oz',
-            file: 'oz.js',
+            code: 'en',
+            file: 'en.js',
           },
         ],
         strategy: 'prefix_and_default',
-        defaultLocale: 'oz',
+        defaultLocale: 'en',
         detectBrowserLanguage: false,
         lazy: true,
         vueI18nLoader: true,
@@ -74,10 +83,9 @@ export default {
     ],
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     baseURL: process.env.BASE_URL || 'https://jsonplaceholder.typicode.com/',
   },
-  // Build Configuration: https://go.nuxtjs.dev/config-build
+
   build: {},
 }
