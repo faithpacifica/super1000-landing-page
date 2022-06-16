@@ -15,7 +15,7 @@
         Iltimos qayta urinib ko‘ring
       </p>
 <!--TODO: localePath('/') -->
-      <nuxt-link to="/" class="flex items-center transition bg-[#746bb3] hover:opacity-80 active:opacity-60 hover:translate-y-10 active:translate-[-10px] rounded-[8px] py-[18px] pl-[38.5px] pr-[36px]">
+      <nuxt-link :to="localePath('/')" class="flex items-center transition bg-[#746bb3] hover:opacity-80 active:opacity-60 hover:translate-y-10 active:translate-[-10px] rounded-[8px] py-[18px] pl-[38.5px] pr-[36px]">
         <Icon name="home_icon" class="home_icon" />
         <span class="font-['Inter'] font-medium text-[15px] leading-[20px] text-white ml-[10px]">
           Bosh sahifaga qaytish

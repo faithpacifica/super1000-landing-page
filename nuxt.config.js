@@ -78,7 +78,7 @@ export default {
           },
         ],
         strategy: 'prefix_and_default',
-        defaultLocale: 'en',
+        defaultLocale: 'uz',
         detectBrowserLanguage: false,
         lazy: true,
         vueI18nLoader: true,

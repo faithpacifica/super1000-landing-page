@@ -4,7 +4,7 @@
   <div class="box-shadow"></div>
   <div class="text-box z-10 absolute left-[20px] bottom-[20px] right-[20px]">
 
-    <p class="article-text  font-['Poppins'] flex flex-col justify-self-end font-semibold text-[20rem] leading-[26rem] text-white  translate-y-[26px]">
+    <p class="article-text transition-all duration-300 font-['Poppins'] flex flex-col justify-self-end font-semibold text-[20rem] leading-[26rem] text-white  translate-y-[26px]">
       {{text}}
     </p>
     <!-- TODO: batafsil sekin yuqotish-->

@@ -107,14 +107,12 @@ export default {
   border-top: #80819133 1px solid;
 
   .made-by {
-    transition: 0.5s linear;
+    .icon svg {
+      transition: .5s linear;
+    }
 
     &:hover .icon svg {
-      transition: 0.5s linear;
       transform:translateX(20px);
-      &:hover {
-        transition: 0.5s linear;
-      }
 
     }
   }
