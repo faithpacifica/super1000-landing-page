@@ -102,10 +102,13 @@
             <div class="owner-socials flex gap-[9rem]">
               <a
                 class="
+                owner-socials__link
                   flex
                   items-center
                   bg-[#F4EFFD]
+                  hover:bg-[#b9b7bf]
                   dark:bg-[#6d35e13b]
+                    dark:hover:bg-[#8f7cb43b]
                   rounded-[20px]
                   p-[8rem]
                   pr-[12rem]
@@ -143,10 +146,13 @@
 
               <a
                 class="
+                owner-socials__link
                   flex
                   items-center
                   bg-[#F4EFFD]
+                  hover:bg-[#b9b7bf]
                   dark:bg-[#6d35e13b]
+                    dark:hover:bg-[#8f7cb43b]
                   rounded-[20rem]
                   p-[8rem]
                   pr-[12rem]

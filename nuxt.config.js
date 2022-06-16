@@ -29,6 +29,10 @@ export default {
     {
       src: "~/plugins/vue-slick-carousel.js",
     },
+    {
+      src: "~/plugins/VueNumber.js",
+      ssr: false,
+    },
   ],
 
   components: true,

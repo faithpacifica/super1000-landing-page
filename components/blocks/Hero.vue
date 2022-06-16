@@ -95,8 +95,6 @@
 </div>
 </template>
 
-<
-
 <script>
 import Mouse from '@/components/actions/Mouse.vue';
 export default {
@@ -122,9 +120,12 @@ export default {
 }
 .dark .hero{  background-image: url(@/assets/images/dark-hero.png);}
 
-// .globe:hover svg path {
-//     fill: rgb(44, 160, 255);
-// }
+ i:hover i svg {
+  path {
+  stroke:rgb(44, 160, 255);
+
+ }
+  }
 
 // ANIMATION
 .pulsating-star {

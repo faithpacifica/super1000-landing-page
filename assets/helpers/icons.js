@@ -164,5 +164,17 @@ export default {
   <path d="M4.1665 10V15.8333C4.1665 16.7538 4.9127 17.5 5.83317 17.5H14.1665C15.087 17.5 15.8332 16.7538 15.8332 15.8333V10" stroke="#DAD6F4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M7.5 17.5V12.5C7.5 11.5795 8.24619 10.8333 9.16667 10.8333H10.8333C11.7538 10.8333 12.5 11.5795 12.5 12.5V17.5" stroke="#DAD6F4" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
   </svg>
+  `,
+  white_star:`<svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M26.8895 12.4108L29.5 6.23119L32.1105 12.4108C34.8679 18.9379 40.0621 24.1321 46.5892 26.8895L52.7688 29.5L46.5892 32.1105C40.0621 34.8679 34.8679 40.0621 32.1105 46.5892L29.5 52.7688L26.8895 46.5892C24.1321 40.0621 18.9379 34.8679 12.4108 32.1105L6.23119 29.5L12.4108 26.8895C18.9379 24.1321 24.1321 18.9379 26.8895 12.4108Z" stroke="#212639" stroke-width="5.62798" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  `,
+  white_half_round:`<svg width="40" height="26" viewBox="0 0 40 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M36.0455 8.56806C27.8112 1.62697 15.509 2.67537 8.56795 10.9097C1.62686 19.1441 2.67526 31.4462 10.9096 38.3873" stroke="#212639" stroke-width="7.75" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+  `,
+  white_full_round:`<svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="23" cy="23" r="19.125" stroke="#212639" stroke-width="7.75" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
   `
 }

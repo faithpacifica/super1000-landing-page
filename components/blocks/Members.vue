@@ -2,7 +2,7 @@
 <div class="py-[32rem] dark:bg-[#1A1D27]">
   <div class="container">
     <SectionTitle class="mb-[20rem] text-center dark:text-white" :title="'Jamoa'" />
-    <div class="members-wrapper grid lg:grid-cols-4 sm:grid-cols-2  gap-[16rem] ">
+    <div class="members-wrapper grid lg:grid-cols-5   sm:grid-cols-2  gap-[16rem] ">
       <SingleMember
        class="single-member"
         v-for="(item, index) in members"
@@ -87,6 +87,12 @@ export default {
 </script>
 
 <style lang="scss">
+
+  @media screen and (min-width: 860px) and (max-width: 1200px) {
+ .members-wrapper{
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+ }
+}
   @media screen and (min-width: 320px) and (max-width: 1024px) {
   .single-member{
     display: flex;

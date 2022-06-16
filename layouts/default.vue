@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="dark ? 'dark' : 'light'">
+    :class="dark ? 'dark' : 'light'" class="">
     <Header />
     <Nuxt />
     <Footer />
@@ -11,7 +11,9 @@
 import { mapGetters } from 'vuex';
 import Header from "~/components/others/Header.vue";
 import Footer from "~/components/others/Footer.vue";
+
 export default {
+
   components: {
     Header,
     Footer,

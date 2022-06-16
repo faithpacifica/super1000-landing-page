@@ -28,6 +28,8 @@ import Members from "@/components/blocks/Members.vue"
 import Licence from "@/components/blocks/Licence.vue"
 import CourseParticipants from "@/components/blocks/CourseParticipants.vue"
 import Sponsors from "@/components/blocks/Sponsors.vue"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 export default {
   components: {
     Hero,
@@ -42,6 +44,9 @@ export default {
     Licence,
     CourseParticipants,
     Sponsors
+  },
+   mounted () {
+    AOS.init();
   },
     computed: {
     scrollToTop() {

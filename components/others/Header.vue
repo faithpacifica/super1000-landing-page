@@ -37,16 +37,22 @@
                 <div class="
                           bg-white
                           border-[1px] border-[#d7d7d780]
+                          dark:bg-[#1A1D27]
                           rounded-[8rem]
+                          overflow-hidden
                         ">
                   <div v-for="(item, index) in langs" :key="index" class="whitespace-nowrap flex-center gap-[8rem]" :class="{ 'lang-active': showLang }">
                     <nuxt-link :to="switchLocalePath(`${item.short}`)" class="
                               border-b-[1px] border-b-[#d7d7d780]
                               w-full
+                              dark:border-b-[#CED1D9]
+                              dark:bg-[#1A1D27]
+                              dark:text-white
                               hover:text-[#6D35E1] hover:bg-[#e5e2ec]
                               cursor-pointer
                               transition
                               duration-200
+
                               whitespace-nowrap
                               flex
                               justify-start
@@ -56,7 +62,7 @@
                             " :class="{
                               'border-b-[0px]': index === langs.length - 1,
                             }" @click.native="showLang = false">
-                            <Icon name="globus_icon" />
+                            <Icon class="mr-[5px]" name="globus_icon" />
                             {{ item.title }}
                     </nuxt-link>
                   </div>
@@ -66,7 +72,7 @@
           </div>
 
         </div>
-
+<!-- TODO:localePath('/') -->
         <nuxt-link class="logo-link ]" to="/">
           <Icon class="block " name="logo_light" />
         </nuxt-link>
@@ -117,6 +123,8 @@ export default {
           return "O'zbekcha";
         case "ru":
           return "Русский";
+        case "en":
+          return "English";
         default:
           return "English";
       }
@@ -126,6 +134,24 @@ export default {
 </script>
 
 <style lang="scss">
+.lang-enter-active {
+  animation: lang 0.4s ease-out;
+}
+.lang-leave-active {
+  animation: lang 0.4s ease-in reverse;
+}
+
+@keyframes lang {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .header {
   // TODO:box-shadow?
   border: 1px solid rgba(17, 20, 45, 0.12);

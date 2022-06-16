@@ -19,6 +19,7 @@
 </template>
 
 <script>
+
 import SectionTitle from '~/components/common/SectionTitle.vue'
 import NewsCard from '~/components/cards/NewsCard.vue'
 export default {

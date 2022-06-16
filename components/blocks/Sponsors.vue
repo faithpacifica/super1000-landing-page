@@ -1,127 +1,95 @@
 <template>
 <div class="sponsors bg-[#F7F8FA] dark:bg-[#2B2F3A] relative pt-[32rem]">
-  <SectionTitle class="text-center dark:text-white" :title="'Hamkorlar'" />
-  <div v-if="dark" class="">
-    <VueSlickCarousel v-if="sponsors || sponsors.length" v-bind="settings" ref="sponsorsCarousel">
-      <div class="">
-        <div class="
-              sponsors-card-wrapper
-              grid
-              container
-              gap-[24px]
-              lg:grid-cols-12
-              md:justify-center
-              lg:mb-0
-              sm:mb-[64rem]
-              sm:justify-center
-            ">
-          <!-- <div v-if="dark"> -->
-            <div v-for="(item, i) in sponsorsDark" :key="i" class="
-                  sponsor-card
-                  h-[108rem]
-                  w-[278rem]
-                  mt-[20rem]
-                  flex
-                 lg:mb-[64rem]
-                 sm:mb-[0rem]
-                  lg:col-span-3
-                  md:col-span-4
-                  sm:col-span-6
-                  items-center
-                  justify-center
-                  rounded-[16px]
-                  bg-[#F7F8FA]
-                  dark:bg-transparent dark:hover:bg-[#1A1D27]
-                ">
-              <img :src="item.icon" alt="sponsor image" />
-            </div>
-          <!-- </div> -->
+  <SectionTitle class="text-center mb-[20rem] dark:text-white" :title="'Hamkorlar'" />
+
+<!-- DARK -->
+  <div v-if="dark" class="sponsors-card-wrapper container  sm:pb-[64rem] ">
+    <VueSlickCarousel v-if="sponsorsDark || sponsorsDark.length" v-bind="settings" ref="sponsorsCarousel" class="overflow-hidden ">
+      <div v-for="(item, i) in sponsorsDark" :key="i" class="overflow-hidden ">
+        <div class="sponsor-card h-[108rem] w-[278rem]  flex justify-center items-center mt-[20rem] mb-[64rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
+          <img :src="item.icon" alt="sponsor image" />
         </div>
       </div>
     </VueSlickCarousel>
-
-    <!-- Arrows positionda -->
-    <div class="">
-      <div @click.prevent="slidePrev" class="prev cursor-pointer absolute bottom-[40%] left-[120rem]">
-        <Icon name="arrow_left" class="w-[28px] h-[28px]" />
-      </div>
-      <div @click.prevent="slideNext" class="next cursor-pointer absolute right-[120rem] bottom-[40%]">
-        <Icon name="arrow_right" class="w-[28px] h-[28px]" />
-      </div>
-    </div>
   </div>
-  <div v-else class="">
-    <VueSlickCarousel v-if="sponsors || sponsors.length" v-bind="settings" ref="sponsorsCarousel">
-      <div class="">
-        <div class="
-              sponsors-card-wrapper
-              grid
-              container
-              gap-[24px]
-              lg:mb-0
-              sm:mb-[64rem]
-              lg:grid-cols-12
-              md:justify-center
-              sm:justify-center
-            ">
-          <!-- <div v-if="dark"> -->
-            <div v-for="(item, i) in sponsors" :key="i" class="
-                  sponsor-card
-                  h-[108rem]
-                  w-[278rem]
-                  mt-[20rem]
-                  lg:mb-[64rem]
-                 sm:mb-[0rem]
-                  flex
-                  lg:col-span-3
-                  md:col-span-4
-                  sm:col-span-6
-                  items-center
-                  justify-center
-                  rounded-[16px]
-                  bg-[#F7F8FA]
-                  dark:bg-transparent dark:hover:bg-[#1A1D27]
-                ">
-              <img :src="item.icon" alt="sponsor image" />
-            </div>
-          <!-- </div> -->
+
+
+<div v-else class="sponsors-card-wrapper container  sm:pb-[64rem] ">
+    <VueSlickCarousel v-if="sponsors || sponsors.length" v-bind="settings" ref="sponsorsCarousel" class="overflow-hidden ">
+      <div v-for="(item, i) in sponsors" :key="i" class="overflow-hidden ">
+
+        <div class="sponsor-card h-[108rem] w-[278rem]  flex justify-center items-center mt-[20rem] mb-[64rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
+          <img :src="item.icon" alt="sponsor image" />
         </div>
       </div>
     </VueSlickCarousel>
+  </div>
 
-    <!-- Arrows positionda -->
-    <div class="">
-      <div @click.prevent="slidePrev" class="prev cursor-pointer absolute bottom-[40%] left-[120rem]">
+
+
+
+  <!-- Arrows positionda -->
+  <div class="">
+      <div @click.prevent="slidePrev" class="prev cursor-pointer absolute top-[150px] left-[120rem]">
         <Icon name="arrow_left" class="w-[28px] h-[28px]" />
       </div>
-      <div @click.prevent="slideNext" class="next cursor-pointer absolute right-[120rem] bottom-[40%]">
+      <div @click.prevent="slideNext" class="next cursor-pointer absolute right-[120rem] top-[150px]">
         <Icon name="arrow_right" class="w-[28px] h-[28px]" />
       </div>
     </div>
-  </div>
 </div>
 </template>
 
 <script>
-
-import {  mapGetters} from 'vuex';
+import {
+  mapGetters
+} from 'vuex'
 import SectionTitle from '~/components/common/SectionTitle.vue'
 export default {
   components: {
     SectionTitle,
   },
-   computed: {
-    ...mapGetters(['dark'])
+  computed: {
+    ...mapGetters(['dark']),
   },
   data() {
     return {
       settings: {
+        arrows:false,
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
-        slidesToShow: 1,
+        centerPadding: '50px',
+        slidesToShow: 4,
         slidesToScroll: 1,
         initialSlide: 0,
+
+        responsive: [
+          {
+            breakpoint: 1240,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
       },
       sponsors: [{
           icon: require('@/assets/images/logo-1.png'),
@@ -135,6 +103,9 @@ export default {
         {
           icon: require('@/assets/images/logo-4.png'),
         },
+         {
+          icon: require('@/assets/images/logo-3.png'),
+        },
       ],
       sponsorsDark: [{
           icon: require('@/assets/images/dark-logo-1.png'),
@@ -147,6 +118,9 @@ export default {
         },
         {
           icon: require('@/assets/images/dark-logo-4.png'),
+        },
+          {
+          icon: require('@/assets/images/dark-logo-3.png'),
         },
       ],
     }
@@ -168,9 +142,17 @@ export default {
 </script>
 
 <style lang="scss">
+.sponsors-card-wrapper{
+  .slick-initialized .slick-slide{
+    display: flex !important;
+    justify-content: center !important;;
+  }
+}
 .sponsor-card {
   border: 1px solid rgba(17, 20, 45, 0.12);
   transition: 0.3s ease;
+  margin-left: 15px;
+  margin-right: 15px;
 
   // border: 1px solid transparent;
   &:hover {
@@ -191,17 +173,30 @@ export default {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 1450px){
+  .sponsors{
+    .prev{
+      left: 20px;
+    }
+    .next{
+      right: 20px;
+    }
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   .sponsors-card-wrapper {
     justify-content: center;
   }
 }
+
 @media screen and (min-width: 320px) and (max-width: 640px) {
   .sponsor-card {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
-  .sponsors-card-wrapper{
-    margin-bottom: 64px;
+
+  .sponsors-card-wrapper {
+    padding-bottom: 64rem;
   }
 }
 </style>
