@@ -1,6 +1,7 @@
 <template>
+    <!-- to="/news/_slug" -->
   <nuxt-link
-    to="/news/_slug"
+  :to="localePath('/news/_slug')" 
     class="
       news-card
       flex flex-col
@@ -61,7 +62,8 @@
         Loyiha ishtirokchilari orasidan, eng faollari saralab olinadi, va ular
         Mclarenni qo‘lga kiri...
       </p>
-      <nuxt-link class="more flex items-center" to="/news/_slug">
+      <nuxt-link class="more flex items-center"   :to="localePath('/news/_slug')"   >
+        <!-- to="/news/_slug" -->
         <span
           class="
             text-[16rem]

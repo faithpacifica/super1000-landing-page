@@ -2,7 +2,7 @@
 <div class="footer bg-[#1A1D27] pt-[32rem] pb-[20rem] text-white">
   <div class="container">
     <div class="footer-top flex items-center">
-      <nuxt-link to="/" @click="scrollToTop()" class="inline-block w-[147rem] h-[34rem]">
+      <nuxt-link  :to="localePath('/')" @click="scrollToTop()" class="inline-block w-[147rem] h-[34rem]">
         <Icon class="logo inline" name="logo_light" />
       </nuxt-link>
       <div class="
@@ -23,7 +23,7 @@
                 transition
                 hover:text-[#6D35E1]
                  active:opacity-60
-              " to="/">Loyiha haqida
+              "  :to="localePath('/')">Loyiha haqida
           </nuxt-link>
         </li>
         <li>
@@ -34,7 +34,9 @@
                 transition
                 hover:text-[#6D35E1]
                 active:opacity-60"
-               to="/news">Yangiliklar
+                :to="localePath('/news')"
+               >Yangiliklar
+               <!-- to="/news" -->
           </nuxt-link>
         </li>
         <li>
@@ -45,7 +47,9 @@
                 transition
                 hover:text-[#6D35E1]
                  active:opacity-60
-              " to="/">Ommaviy offerta
+              "
+               :to="localePath('/')" 
+              >Ommaviy offerta
           </nuxt-link>
         </li>
       </ul>

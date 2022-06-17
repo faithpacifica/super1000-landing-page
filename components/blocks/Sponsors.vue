@@ -37,9 +37,7 @@
 </template>
 
 <script>
-import {
-  mapGetters
-} from 'vuex'
+import {  mapGetters} from 'vuex'
 import SectionTitle from '~/components/common/SectionTitle.vue'
 export default {
   components: {

@@ -4,7 +4,8 @@
     <div class="section-top flex items-center justify-between mb-[28rem]">
       <SectionTitle class="dark:text-white" :title="'Sohaga doir maqolalar'" />
 
-      <nuxt-link class="all-news flex items-center" to="/news">
+      <nuxt-link class="all-news flex items-center" :to="localePath('/news')"  >
+      <!-- to="/news" -->
         <span class="
               text-[20rem]
               leading-[26rem]

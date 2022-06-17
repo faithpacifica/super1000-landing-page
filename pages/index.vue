@@ -1,5 +1,6 @@
 <template>
 <div>
+
   <Hero />
   <ProjectPurpose />
   <Statistics />
@@ -16,6 +17,7 @@
 </template>
 
 <script>
+
 import Hero from '@/components/blocks/Hero.vue'
 import ProjectPurpose from '@/components/blocks/ProjectPurpose.vue'
 import Statistics from '@/components/blocks/Statistics.vue'

@@ -73,7 +73,7 @@
 
         </div>
 
-        <nuxt-link class="logo-link " to="/">
+        <nuxt-link class="logo-link "  :to="localePath('/')">
           <Icon class="block " name="logo_light" />
         </nuxt-link>
 
