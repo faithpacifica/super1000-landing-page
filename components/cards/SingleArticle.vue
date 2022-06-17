@@ -7,8 +7,8 @@
     <p class="article-text transition-all duration-300 font-['Poppins'] flex flex-col justify-self-end font-semibold text-[20rem] leading-[26rem] text-white  translate-y-[26px]">
       {{text}}
     </p>
-    <!-- TODO: batafsil sekin yuqotish-->
-    <nuxt-link class="more opacity-0  flex items-center " to="/news/_slug">
+
+    <nuxt-link class="more opacity-0  flex items-center " to="news/_slug">
       <span class="text-[16rem] inline-block leading-[20rem] font-['Poppins'] text-white">Batafsil</span>
       <Icon name="more" class="arrow_right self-baseline ml-[4px] transition" />
     </nuxt-link>

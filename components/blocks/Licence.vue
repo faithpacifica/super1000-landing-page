@@ -3,7 +3,7 @@
   <div class="container licence-container flex gap-[24px]">
     <div class="flex flex-col ">
       <SectionTitle class="mb-[20rem] text-center dark:text-white" :title="'Kurs patenti'" />
-      <p class="mb-[8px]  font-['Inter']
+      <p data-aos="fade-left" class="mb-[8px]  font-['Inter']
                 text-[16rem]
                 leading-[22rem]
                 text-[#373A43] dark:text-[#ffffffbf] text-justify">
@@ -20,7 +20,7 @@
         oshirishlari va uyidan chiqmasdanoq juda ko'p pul ishlab olishlari
         mumkin.
       </p>
-      <p class="font-['Inter']
+      <p data-aos="fade-left" class="font-['Inter']
                 text-[16rem]
                 leading-[22rem]
                 text-[#373A43] dark:text-[#ffffffbf] text-justify">
@@ -61,6 +61,7 @@ export default {
 <style lang="scss">
 .licence-wrapper {
   border: 1px solid rgba(108, 53, 221, 0.2);
+  box-shadow: 1px 24px 32px -13px rgba(34, 60, 80, 0.2);
   // TODO:shadow bor olib bumayapti
 }
 
@@ -72,7 +73,9 @@ export default {
   width: 300rem;
   height: 350rem;
   margin: 30px auto 0;
-
+-webkit-box-shadow: 1px 24px 32px -13px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 1px 24px 32px -13px rgba(34, 60, 80, 0.2);
+box-shadow: 1px 24px 32px -13px rgba(34, 60, 80, 0.2);
 }
 }
 </style>

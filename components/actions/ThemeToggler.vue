@@ -1,10 +1,10 @@
 <template>
-<!-- TODO:Stillani tugirlash -->
 <button class="flex" >
   <span v-if="dark" class="mr-[10px] text-[#808191]">Tun</span>
   <span v-else class="mr-[10px] text-[#808191]">Kun</span>
   <input type="checkbox" class="checkbox" id="checkbox">
   <label for="checkbox" class="checkbox-label bg-[#E5E5EA] dark:bg-[#6C5DD3]" :class="dark ? 'dark' : 'light'"  @click="toggleDarkMode" >
+    <!-- TODO:ball -->
     <span class="ball"></span>
     <!-- :class="dark ? 'absolute left-50' : 'absolute right-50' "  -->
   </label>

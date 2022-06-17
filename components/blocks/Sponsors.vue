@@ -2,7 +2,7 @@
 <div class="sponsors bg-[#F7F8FA] dark:bg-[#2B2F3A] relative pt-[32rem]">
   <SectionTitle class="text-center mb-[20rem] dark:text-white" :title="'Hamkorlar'" />
 
-<!-- DARK -->
+  <!-- DARK -->
   <div v-if="dark" class="sponsors-card-wrapper container  sm:pb-[64rem] ">
     <VueSlickCarousel v-if="sponsorsDark || sponsorsDark.length" v-bind="settings" ref="sponsorsCarousel" class="overflow-hidden ">
       <div v-for="(item, i) in sponsorsDark" :key="i" class="overflow-hidden ">
@@ -13,8 +13,7 @@
     </VueSlickCarousel>
   </div>
 
-
-<div v-else class="sponsors-card-wrapper container  sm:pb-[64rem] ">
+  <div v-else class="sponsors-card-wrapper container  sm:pb-[64rem] ">
     <VueSlickCarousel v-if="sponsors || sponsors.length" v-bind="settings" ref="sponsorsCarousel" class="overflow-hidden ">
       <div v-for="(item, i) in sponsors" :key="i" class="overflow-hidden ">
 
@@ -25,18 +24,15 @@
     </VueSlickCarousel>
   </div>
 
-
-
-
   <!-- Arrows positionda -->
   <div class="">
-      <div @click.prevent="slidePrev" class="prev cursor-pointer absolute top-[150px] left-[120rem]">
-        <Icon name="arrow_left" class="w-[28px] h-[28px]" />
-      </div>
-      <div @click.prevent="slideNext" class="next cursor-pointer absolute right-[120rem] top-[150px]">
-        <Icon name="arrow_right" class="w-[28px] h-[28px]" />
-      </div>
+    <div @click.prevent="slidePrev" class="prev cursor-pointer absolute top-[150px] left-[120rem]">
+      <Icon name="arrow_left" class="w-[28px] h-[28px]" />
     </div>
+    <div @click.prevent="slideNext" class="next cursor-pointer absolute right-[120rem] top-[150px]">
+      <Icon name="arrow_right" class="w-[28px] h-[28px]" />
+    </div>
+  </div>
 </div>
 </template>
 
@@ -55,7 +51,7 @@ export default {
   data() {
     return {
       settings: {
-        arrows:false,
+        arrows: false,
         dots: false,
         infinite: true,
         speed: 500,
@@ -64,8 +60,7 @@ export default {
         slidesToScroll: 1,
         initialSlide: 0,
 
-        responsive: [
-          {
+        responsive: [{
             breakpoint: 1240,
             settings: {
               slidesToShow: 3,
@@ -103,7 +98,7 @@ export default {
         {
           icon: require('@/assets/images/logo-4.png'),
         },
-         {
+        {
           icon: require('@/assets/images/logo-3.png'),
         },
       ],
@@ -119,7 +114,7 @@ export default {
         {
           icon: require('@/assets/images/dark-logo-4.png'),
         },
-          {
+        {
           icon: require('@/assets/images/dark-logo-3.png'),
         },
       ],
@@ -142,19 +137,20 @@ export default {
 </script>
 
 <style lang="scss">
-.sponsors-card-wrapper{
-  .slick-initialized .slick-slide{
+.sponsors-card-wrapper {
+  .slick-initialized .slick-slide {
     display: flex !important;
-    justify-content: center !important;;
+    justify-content: center !important;
+    ;
   }
 }
+
 .sponsor-card {
   border: 1px solid rgba(17, 20, 45, 0.12);
   transition: 0.3s ease;
   margin-left: 15px;
   margin-right: 15px;
 
-  // border: 1px solid transparent;
   &:hover {
     cursor: pointer;
     background-color: #fff;
@@ -173,13 +169,38 @@ export default {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1450px){
-  .sponsors{
-    .prev{
+@media screen and (min-width: 320px) and (max-width: 1450px) {
+  .sponsors {
+    .prev {
       left: 20px;
     }
-    .next{
+
+    .next {
       right: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 860px) {
+  .sponsors {
+    .prev {
+      top: 130px;
+    }
+
+    .next {
+      top: 130px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .sponsors {
+    .prev {
+      top: 110px;
+    }
+
+    .next {
+      top: 110px;
     }
   }
 }
@@ -191,10 +212,6 @@ export default {
 }
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
-  .sponsor-card {
-    // margin-bottom: 0;
-  }
-
   .sponsors-card-wrapper {
     padding-bottom: 64rem;
   }

@@ -33,6 +33,9 @@ export default {
       src: "~/plugins/VueNumber.js",
       ssr: false,
     },
+    {
+      src: "~/plugins/moment.js",
+    },
   ],
 
   components: true,
@@ -48,18 +51,9 @@ export default {
     '@nuxtjs/tailwindcss',
   ],
 
-  // tailwindcss: {
-  //   jit: true,
-  //   // add '~tailwind.config` alias
-  //   exposeConfig: true
-  // },
-  // colorMode: {
-  //   classSuffix: ""
-  // },
 
   modules: [
     '@nuxtjs/axios',
-    // '@nuxtjs/color-mode',
     [
       'nuxt-i18n',
       {

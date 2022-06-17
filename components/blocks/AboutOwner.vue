@@ -1,7 +1,7 @@
 <template>
   <section class="about-owner bg-white dark:bg-[#1A1D27] pt-[64rem]">
     <div class="container">
-      <div class="wrapper flex justify-between gap-[78rem]">
+      <div  class="wrapper flex justify-between gap-[78rem]">
         <div class="owner-speech flex flex-col max-w-[680rem]">
           <h4
             class="
@@ -25,11 +25,11 @@
               dark:text-[#ffffff99]
             "
           >
-            <p class="mb-[10rem]">
+            <p data-aos="fade-left" class="mb-[10rem]">
               Siz ham orzularing tomon bormoqchimisiz? Natijaga tez erishishni
               siri nimada?
             </p>
-            <p class="mb-[10rem]">
+            <p data-aos="fade-left" class="mb-[10rem]">
               Orzu amalga oshishi uchun kuch emas intilish muhimdir. Eng yaxshi
               orzu — rejaga aylangani. Barcha orzularingni eng qisqa muddat
               bilan rejalashtirib qo'y. Ularga bor fokusni qaratib mayda-chuyda
@@ -40,7 +40,7 @@
               edi. Tanlov o'zingda: yoki hozir uyg'onib intilasan, yoki
               orzularingni tushingda ko'rishni davom ettirasan.
             </p>
-            <p>
+            <p data-aos="fade-left">
               Orzularingiz sari intilishdan hech qachon to‘xtamang. Barchangizga
               omad!
             </p>

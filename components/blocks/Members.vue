@@ -1,9 +1,10 @@
 <template>
 <div class="py-[32rem] dark:bg-[#1A1D27]">
-  <div class="container">
+  <div  class="container">
     <SectionTitle class="mb-[20rem] text-center dark:text-white" :title="'Jamoa'" />
-    <div class="members-wrapper grid lg:grid-cols-5   sm:grid-cols-2  gap-[16rem] ">
+    <div  class="members-wrapper mx-auto grid lg:grid-cols-5   sm:grid-cols-2  gap-[16rem] ">
       <SingleMember
+      data-aos="fade-left"
        class="single-member"
         v-for="(item, index) in members"
         :key="index"

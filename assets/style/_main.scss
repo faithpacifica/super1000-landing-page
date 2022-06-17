@@ -9,7 +9,6 @@ $fontFamily: "Inter", "Poppins";
   ) !important;
 
   @media (min-width: 1440px) {
-    // TODO:nega 1px?
     font-size: 1px !important;
   }
 }
@@ -36,10 +35,12 @@ body {
   font-style: normal;
   font-size: 16px;
 
+
 }
 .dark body{
   background-color: #2B2F3A;
 }
+
 *{
   box-sizing: border-box;
 }

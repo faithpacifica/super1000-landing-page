@@ -1,5 +1,4 @@
 <template >
-  <!-- TODO:ICON padding strange -->
   <div class="applicants-sub flex gap-[12px]">
     <div
       :class="subIconBg"

@@ -38,7 +38,7 @@
         <div class="stick my-[25px] max-w-[580rem]"></div>
         <div class="hero-socials flex items-center">
           <div class="flex items-center">
-            <!-- TODO: Hover -->
+            
             <div class="hero-socials_wrapper flex gap-[9px] mr-[8px]">
                   <!-- INSTA -->
               <a class="bg-[#808191] rounded-[50%] px-[5px] pb-[4px] pt-[5px] hover:bg-[#C013CA] transition duration-500 ease" href="https://www.instagram.com/" target="_blank">
@@ -73,7 +73,7 @@
           </div>
           <div class="hero-socials_mail">
             <a href="mailto:'azcapital.uz'" class="flex items-center justify-between" target="_blank">
-              <Icon name="globus_icon" class="globe" />
+              <Icon name="globus_icon" class="hero-icon globe" />
               <span class="
                     ml-[8px]
                     font-['Inter']
@@ -95,10 +95,10 @@
     </div>
 
     <!-- Icons -->
-    <img class="mix-loader absolute left-[43%] top-[48%]" src="@/assets/images/icon-blue-round.png" alt="" />
+    <img class="mix-loader-one absolute left-[43%] top-[48%]" src="@/assets/images/icon-blue-round.png" alt="" />
     <img class=" loader absolute right-[18%] top-[64%]" src="@/assets/images/icon-green-half.png" alt="" />
     <img class="pulsating-star absolute left-[0%] bottom-[25%]" src="@/assets/images/icon-star.png" alt="" />
-    <img class="mix-loader absolute right-[0%] top-[30%]" src="@/assets/images/icon-yellow-round.png" alt="" />
+    <img class="mix-loader-two absolute right-[0%] top-[30%]" src="@/assets/images/icon-yellow-round.png" alt="" />
   </div>
 
   <!-- Hero bottom shadow -->
@@ -133,7 +133,7 @@ export default {
 
 
 // ICONlarga hover berish
-  i {
+  .hero-icon {
     &:hover {
       svg {
         path {
@@ -175,8 +175,12 @@ export default {
   }
 }
 
-.mix-loader {
+.mix-loader-one {
   animation: mix-spinner 4s linear infinite;
+}
+
+.mix-loader-two {
+  animation: mix-spinner 4s ease infinite;
 }
 
 @keyframes mix-spinner {

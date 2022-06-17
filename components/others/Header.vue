@@ -72,8 +72,8 @@
           </div>
 
         </div>
-<!-- TODO:localePath('/') -->
-        <nuxt-link class="logo-link ]" to="/">
+
+        <nuxt-link class="logo-link " to="/">
           <Icon class="block " name="logo_light" />
         </nuxt-link>
 
@@ -153,14 +153,11 @@ export default {
   }
 }
 .header {
-  // TODO:box-shadow?
   border: 1px solid rgba(17, 20, 45, 0.12);
-  // background: #010207;
-  // backdrop-filter: blur(118px);
   box-shadow: 3px 19px 62px 36px rgba(227, 230, 236, 0.68);
 }
 .dark .header {
-  box-shadow: 8px 18px 54px 28px rgba(15, 18, 25, 0.66);
+  box-shadow: 8px 18px 54px 28px rgba(0, 0, 0, 0.66);
 }
 
 @media screen and (min-width: 370px) and (max-width: 767px) {

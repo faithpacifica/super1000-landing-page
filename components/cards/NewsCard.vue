@@ -31,8 +31,7 @@
           mb-[8rem]
         "
       >
-        <!-- TODO:moment.js -->
-        14.06.2022
+     {{ $moment(date, "DD.MM.YYYY") }}
       </p>
       <div
         class="
@@ -87,7 +86,15 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props:{
+ date: {
+      type: String,
+      default: null,
+    },
+  },
+
+}
 </script>
 
 <style lang="scss">
@@ -132,7 +139,6 @@ export default {}
   }
 
   .more i svg path {
-    // fill:#FFCE73;
     stroke: #ffce73;
   }
 }

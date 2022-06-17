@@ -199,7 +199,6 @@ export default {
       // TODO:
       // filter: blur(60px);
 
-      // opacity: 0.5;
       img {
         z-index: 10;
         opacity: 1;

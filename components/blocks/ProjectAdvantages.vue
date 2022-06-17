@@ -3,9 +3,10 @@
   <div class="container">
     <SectionTitle class="mb-[28rem] dark:text-white" :title="'Loyiha nimalar bera oldi'" />
 
-    <div class="grid gap-[24px] lg:grid-cols-12  md:grid-cols-6">
+    <div  data-aos="fade-up" class="grid gap-[24px] lg:grid-cols-12  md:grid-cols-6">
 
       <AdvantageCard
+
       v-for="(item, index) in advantages"
       :key="index"
       class="advantage-cards-wrapper lg:col-span-4 md:col-span-6 sm:col-span-12  xs:col-span-12 "
