@@ -5,8 +5,8 @@
       <img src="@/assets/images/error.png" alt="">
     </div>
 
-    <div class="flex flex-col flex-center-center pt-[24rem]">
-      <h2 class="font-['Poppins'] font-semibold text-[48px] leading-[62px] text-[#373A43] dark:text-white mb-[54px]">
+    <div class="flex flex-col flex-center-center text-center  pt-[24rem]">
+      <h2 class="font-['Poppins'] font-semibold text-[48rem] leading-[62rem] text-[#373A43] dark:text-white mb-[54px]">
         Ehh, ushbu sahifa topilmadi 😔
         <!-- {{ $t('title.error') }}    -430:gap-[35rem] -400:gap-[33rem] gap-[70rem]-->
       </h2>
@@ -24,10 +24,10 @@
     </div>
 
 
-    <img class="mix-loader absolute left-[14%] top-[7%]" src="@/assets/images/icon-blue-round.png" />
+    <img class="mix-loader-one absolute left-[14%] top-[7%]" src="@/assets/images/icon-blue-round.png" />
     <img class=" loader absolute right-[7%] top-[85%]" src="@/assets/images/icon-green-half.png" />
     <img class="pulsating-star absolute left-[0%] bottom-[25%]" src="@/assets/images/icon-star.png" />
-    <img class="mix-loader absolute right-[0%] top-[15%]" src="@/assets/images/icon-yellow-round.png" />
+    <img class="mix-loader absolute right-[0%] top-[25%]" src="@/assets/images/icon-yellow-round.png" />
   </div>
 </div>
 </template>
@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss" scoped>
 // ANIMATION
-  .pulsating-star {
+ .error .pulsating-star {
     position: absolute;
     animation: animate 8s linear infinite;
   }
@@ -64,7 +64,7 @@ export default {
     }
   }
 
-  .loader {
+ .error .loader {
     animation: spinner 4s linear infinite;
   }
 
@@ -78,7 +78,10 @@ export default {
     }
   }
 
-.mix-loader {
+.error .mix-loader-one {
+  animation: mix-spinner 4s linear infinite;
+}
+.error .mix-loader {
   animation: mix-spinner 4s linear infinite;
 }
 

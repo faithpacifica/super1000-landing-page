@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="dark ? 'dark' : 'light'" class="">
+    :class="dark ? 'dark' : 'light'" class="overflow-x-hidden">
     <Header />
     <Nuxt />
     <Footer />

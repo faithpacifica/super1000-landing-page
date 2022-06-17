@@ -8,9 +8,8 @@
         <img class="rounded-[28rem] h-full w-full" src="@/assets/images/car-1.jpg" alt="" />
       </div>
 
-      <VueSlickCarousel class="h-[296px] max-w-[782px] w-full" ref="carousel" v-bind="settings">
-        <div v-for="item in 1" :key="item" class="z-5 w-full">
-          <!-- !overflow-hidden -->
+      <VueSlickCarousel class="h-[296px] w-[782px]" ref="carousel" v-bind="settings">
+        <div v-for="(item, index) in 1" :key="index" class="z-5 w-full">
           <div class="main-box flex bg-white dark:bg-[#1A1D27] dark:border-[#ffffff1f] dark:border dark:border-solid border border-solid p-[16rem] rounded-[28rem] h-[296px]">
             <div class="main-box__img-wrapper max-w-[214px] w-full">
               <img class="rounded-[28rem] w-full h-full" src="@/assets/images/car-main.jpg" alt="" />
@@ -37,105 +36,6 @@
         <img class="rounded-[28rem] h-full w-full" src="@/assets/images/car-2.jpg" alt="" />
       </div>
     </div>
-
-    <!-- <div class="carousel-wrapper flex relative overflow-hidden ">
-
-        <div class="side-boxes h-[296px] absolute left-0 top-0 z-30">
-          <div class="shadow-effect">
-            <img
-              class="w-full h-full rounded-[28px]"
-              src="@/assets/images/car-1.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <VueSlickCarousel
-          class="staff-carousel__main h-[296px] overflow-hidden max-w-[782px] w-full mx-auto z-10"
-          ref="carousel"
-          v-bind="settings"
-        >
-          <div v-for="item in 4" :key="item" class="!overflow-hidden z-5">
-            <div class="flex w-full">
-              <div
-                class="
-                staff-carousel__inner
-                  flex
-                  bg-white
-                  border border-solid
-                  main-box
-                  h-[296px]
-                  mx-[28px]
-                  p-[16px]
-                  rounded-[28px]
-                "
-              >
-                <div class="main-box__img-wrapper">
-                  <img
-                    class="h-[264px] rounded-[28px]"
-                    src="@/assets/images/car-main.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="flex flex-col ml-[28rem]">
-                  <Icon
-                    name="quote"
-                    class="!w-[40px] !h-[27px] mb-[18px] mt-[14rem]"
-                  />
-                  <p
-                    class="
-                      mb-[20px]
-                      font-['Inter']
-                      text-[18rem]
-                      leading-[22rem]
-                      text-[#373A43]
-                      max-w-[496rem]
-                      font-normal
-                    "
-                  >
-                    Super 1000 loyihasi asoschilariga o‘ziming
-                    minnatdorchiligimni bilidirgan bo‘lardim. Loyihaning asosiy
-                    maqsadi treyding darslari bo‘lishiga qaramay, boshqa
-                    foydalik kontent foydasini aytib o‘tmaslik noshkurlik bo‘lib
-                    qoladi. Loyiha uchun rahmat!
-                  </p>
-                  <SectionTitle
-                    class="
-                      mb-[2rem]
-                      font-['Poppins'] font-semibold
-                      text-[27rem]
-                      leading-[130%]
-                      text-[#373A43]
-                    "
-                    :title="'Pulatov Jasurbek'"
-                  />
-                  <p
-                    class="
-                      font-['Inter'] font-normal
-                      text-[16rem]
-                      leading-[130%]
-                      text-[#84868C]
-                    "
-                  >
-                    Loyiha ishtirokchisi
-                  </p>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </VueSlickCarousel>
-
-        <div class="side-boxes h-[296px] absolute top-0 right-0 z-30">
-          <div class="shadow-effect">
-            <img
-              class="w-full h-full rounded-[28px]"
-              src="@/assets/images/car-2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div> -->
 
     <!-- Arrows positionda -->
     <div class="">

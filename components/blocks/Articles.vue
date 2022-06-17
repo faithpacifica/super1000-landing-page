@@ -16,7 +16,7 @@
       </nuxt-link>
     </div>
 
-    <div data-aos="fade-left" class="article-cards grid lg:grid-cols-12 md:grid-cols-2  gap-[25rem] md:justify-center sm:justify-center ">
+    <div  class="article-cards grid lg:grid-cols-12 md:grid-cols-2  gap-[25rem] md:justify-center sm:justify-center ">
       <SingleArticle
       v-for="(item, index) in articles"
       :key="index"

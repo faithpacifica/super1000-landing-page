@@ -23,6 +23,7 @@
               leading-[27rem]
               text-[#353535]
               dark:text-[#ffffff99]
+              -1000:text-red
             "
           >
             <p data-aos="fade-left" class="mb-[10rem]">
