@@ -3,6 +3,17 @@
     <div class="container statistics__container flex">
       <!-- PIE TODO:what to use?-->
       <div class="chart-wrapper">
+        <div>
+    <!-- <client-only placeholder="Loading...">
+      <pie-chart
+        :chart-options="options"
+        :chart-data="data"
+        :height="100"
+        :width="300"
+        chart-id="pieChart"
+      />
+    </client-only> -->
+  </div>
         <div class="chart self-baseline mr-[32px] p-[8px] rounded-[50%]">
           <div class="chart-pie">
             <img src="@/assets/images/pie.png" alt="" />

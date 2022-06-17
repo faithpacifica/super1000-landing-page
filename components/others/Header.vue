@@ -43,7 +43,7 @@
                           overflow-hidden
                         ">
                     <div v-for="(item, index) in langs" :key="index" class="whitespace-nowrap flex-center gap-[8rem]" :class="{ 'lang-active': showLang }">
-                      <nuxt-link :to="switchLocalePath(`${item.short}`)" class="
+                      <span @click="_i18n.setLocale(`${item.short}`);  showLang = false;" class="
                               border-b-[1px] border-b-[#d7d7d780]
                               w-full
                               dark:border-b-[#CED1D9]
@@ -53,7 +53,6 @@
                               cursor-pointer
                               transition
                               duration-200
-
                               whitespace-nowrap
                               flex
                               justify-start
@@ -62,10 +61,10 @@
                               text-[#323232] text-[14rem]
                             " :class="{
                               'border-b-[0px]': index === langs.length - 1,
-                            }" @click.native="showLang = false">
+                            }">
                         <Icon class="mr-[5px]" name="globus_icon" />
                         {{ item.title }}
-                      </nuxt-link>
+                      </span>
                     </div>
                   </div>
                 </div>

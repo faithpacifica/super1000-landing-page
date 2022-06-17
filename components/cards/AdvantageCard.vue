@@ -67,5 +67,13 @@ export default {
       width: 0;
     }
   }
+
+  .dark  .advantage-card i {
+      svg {
+        path {
+          stroke:#fff;
+        }
+      }
+  }
 }
 </style>

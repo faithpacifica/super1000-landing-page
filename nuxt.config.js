@@ -36,6 +36,7 @@ export default {
     {
       src: "~/plugins/moment.js",
     },
+    // {src: '~/plugins/chart.js', mode: 'client'}
   ],
 
   components: true,
