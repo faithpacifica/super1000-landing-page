@@ -17,7 +17,7 @@
     <h5
       class="
         mb-[8px]
-        font-['Poppins'] font-semibold
+        poppins-font font-semibold
         text-[#1A1C21] dark:text-white text-[20px]
         leading-[24px]
         line-clamp-1
@@ -25,7 +25,7 @@
     >
       {{ title }}
     </h5>
-    <p class="text-[#373A43] dark:text-[#ffffff99] text-[14px] leading-[19px] font-['Inter']   line-clamp-2">
+    <p class="text-[#373A43] dark:text-[#ffffff99] text-[14px] leading-[19px] inter   line-clamp-2">
       {{ text }}
     </p>
   </div>
@@ -57,16 +57,16 @@ export default {
 
   transition: 0.3s ease;
   border: 1.6px solid transparent;
-  &:hover {
-    cursor: pointer;
-    border: 1.6px solid #ffce73;
-    box-shadow: 0 13px 50px rgba(55, 58, 67, 0.09),
-      0 6px 80px rgba(255, 206, 115, 0.2);
-    border-radius: 24px;
-    &::after{
-      width: 0;
-    }
-  }
+  // &:hover {
+  //   cursor: pointer;
+  //   border: 1.6px solid #ffce73;
+  //   box-shadow: 0 13px 50px rgba(55, 58, 67, 0.09),
+  //     0 6px 80px rgba(255, 206, 115, 0.2);
+  //   border-radius: 24px;
+  //   &::after{
+  //     width: 0;
+  //   }
+  // }
 
   .dark  .advantage-card i {
       svg {

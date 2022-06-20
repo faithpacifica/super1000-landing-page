@@ -3,7 +3,7 @@
   <div class="container licence-container flex gap-[24px]">
     <div class="flex flex-col ">
       <SectionTitle class="mb-[20rem] text-center dark:text-white" :title="'Kurs patenti'" />
-      <p data-aos="fade-left" class="mb-[8px]  font-['Inter']
+      <p data-aos="fade-left" class="mb-[8px]  inter
                 text-[16px]
                 leading-[22rem]
                 text-[#373A43] dark:text-[#ffffffbf] text-justify">
@@ -20,7 +20,7 @@
         oshirishlari va uyidan chiqmasdanoq juda ko'p pul ishlab olishlari
         mumkin.
       </p>
-      <p data-aos="fade-left" class="font-['Inter']
+      <p data-aos="fade-left" class="inter
                 text-[16px]
                 leading-[22rem]
                 text-[#373A43] dark:text-[#ffffffbf] text-justify">

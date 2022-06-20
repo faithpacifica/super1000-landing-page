@@ -10,14 +10,14 @@
   </div>
   <div class="applicants-main__info">
     <div class="numbers">
-      <div class=" font-['Poppins'] font-bold text-[40rem] leading-[52rem] text-white">
+      <div class=" poppins-font font-bold text-[40rem] leading-[52rem] text-white">
         <span>
-          <number ref="number1" :from="0" :to="numbers"  :duration="5" :delay="2" easing="Power1.easeOut" />
+          <number ref="number1" :to="numbers"  :duration="5" :delay="2" easing="Power1.easeOut" />
          </span>
           <!-- {{numbers}} -->
          <span> {{unit}}</span>
       </div>
-      <p class="font-['Inter'] text-[16rem] leading-[21rem] text-white">{{text}}</p>
+      <p class="inter text-[16rem] leading-[21rem] text-white">{{text}}</p>
     </div>
   </div>
 </div>
@@ -44,6 +44,7 @@ export default {
     unit: String
   },
   methods:{
+
       playAnimation() {
             this.$refs.number1.play()
         }

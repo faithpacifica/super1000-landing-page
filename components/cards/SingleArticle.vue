@@ -4,13 +4,13 @@
   <div class="box-shadow"></div>
   <div class="text-box z-10 absolute left-[20px] bottom-[20px] right-[20px]">
 
-    <p class="article-text transition-all duration-300 font-['Poppins'] flex flex-col justify-self-end font-semibold text-[20rem] leading-[26rem] text-white  translate-y-[26px]">
+    <p class="article-text transition-all duration-300 poppins-font flex flex-col justify-self-end font-semibold text-[20rem] leading-[26rem] text-white  translate-y-[26px]">
       {{text}}
     </p>
 
     <nuxt-link class="more opacity-0  flex items-center "  :to="localePath('/news')"  >
      <!-- to="news/_slug" -->
-      <span class="text-[16rem] inline-block leading-[20rem] font-['Poppins'] text-white">Batafsil</span>
+      <span class="text-[16rem] inline-block leading-[20rem] poppins-font text-white">Batafsil</span>
       <Icon name="more" class="arrow_right self-baseline ml-[4px] transition" />
     </nuxt-link>
   </div>

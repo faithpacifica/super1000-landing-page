@@ -12,7 +12,7 @@
           " src="@/assets/images/article-2.jpg" alt="" />
       <div class="
             single-news__date
-            font-['Inter']
+            inter
             text-[16rem]
             leading-[21rem]
             text-[#84868C]
@@ -23,7 +23,7 @@
       </div>
       <div class="
             single-news__title
-            font-['Poppins'] font-semibold
+            poppins-font font-semibold
             text-[28rem]
             leading-[36rem]
             text-[#373A43]
@@ -35,7 +35,7 @@
 
       <p data-aos="fade-left" class="
             single-news__subtitle
-            font-['Inter'] font-medium
+            inter font-medium
             text-[18rem]
             leading-[23rem]
             text-[#373A43]
@@ -47,7 +47,7 @@
         Mclarenni qo‘lga kiritish imkoniyatini qo‘lga kiritadi.
       </p>
       <p data-aos="fade-left" class="
-            font-['Inter']
+            inter
             text-[16rem]
             leading-[22rem]
             text-[#373A43]
@@ -151,7 +151,7 @@
 
           <div class="socials-link flex items-center bg-[#F7F8FA] dark:bg-[#2B2F3A] rounded-[6px]">
             <div v-if="windowLocation" class="px-[8px]">
-              <div class=" min-w-[222rem] font-['Inter'] text-[#708195] dark:text-[#ffffff99] leading-[20rem] text-[14rem] bg-transparent">
+              <div class=" min-w-[222rem] inter text-[#708195] dark:text-[#ffffff99] leading-[20rem] text-[14rem] bg-transparent">
                 {{ windowLocation }}
               </div>
             </div>

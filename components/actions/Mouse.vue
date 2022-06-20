@@ -28,7 +28,7 @@
       />
     </svg>
 
-    <div class="flex flex-col font-['Poppins'] flex-start">
+    <div class="flex flex-col poppins-font flex-start">
       <span class="text-[#708195] dark:text-[#60667C] text-[12px] leading-[16px]">Sichqonchani</span>
       <span class="font-semibold text-[#1A1C21] dark:text-white text-[16px] leading-[24px]">pastga suring</span>
     </div>

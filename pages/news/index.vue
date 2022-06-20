@@ -12,7 +12,7 @@
     </div>
 
     <div class="mt-[32px] mx-auto text-center">
-      <button class="show-more bg-[#8f72c9] hover:bg-[#9f87ce] rounded-[10px] py-[12px] px-[33px] text-white font-semibold text-[16px] leading-[20px] font-['Poppins']">
+      <button class="show-more bg-[#8f72c9] hover:bg-[#9f87ce] rounded-[10px] py-[12px] px-[33px] text-white font-semibold text-[16px] leading-[20px] poppins-font">
         <!-- TODO: -->
         Yana yuklash
       </button>

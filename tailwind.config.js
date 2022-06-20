@@ -8,7 +8,12 @@ module.exports = {
   // purge: {
     content: ["./src/**/*.{html,js,vue}"],
     theme: {
-      extend: {},
+      extend: {
+        fontFamily: {
+          'Poppins': ['Poppins'],
+          'Inter': ['Inter'],
+        },
+      },
       screens: {
         sm: '640px',
         md: '860px',

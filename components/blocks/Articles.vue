@@ -9,7 +9,7 @@
         <span class="
               text-[20rem]
               leading-[26rem]
-              font-medium font-['Poppins']
+              font-medium poppins-font
               text-[#84868C]
             ">Barcha yangiliklar</span>
         <Icon name="arrow_right" class="arrow_right w-[24px] ml-[4px] h-[24px] font-[#84868C]" />

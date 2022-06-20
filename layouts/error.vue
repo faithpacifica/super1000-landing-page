@@ -6,18 +6,18 @@
     </div>
 
     <div class="flex flex-col flex-center-center text-center  pt-[24rem]">
-      <h2 class="font-['Poppins'] font-semibold text-[48rem] leading-[62rem] text-[#373A43] dark:text-white mb-[54px]">
-        Ehh, ushbu sahifa topilmadi 😔
+      <h2 class="poppins-font inline font-semibold text-[48rem] leading-[62rem] text-[#373A43] dark:text-white mb-[54px]">
+        Ehh, ushbu sahifa topilmadi <img class="sad-face inline" width="49" src="@/assets/images/emoji-sad.png" alt="sad face">
         <!-- {{ $t('title.error') }}    -430:gap-[35rem] -400:gap-[33rem] gap-[70rem]-->
       </h2>
 
-      <p class="font-['Inter'] text-[15px] leading-[28px] text-[#22343E] dark:text-[#ffffff99] mb-[24px]">
+      <p class="inter text-[15px] leading-[28px] text-[#22343E] dark:text-[#ffffff99] mb-[24px]">
         Iltimos qayta urinib ko‘ring
       </p>
 
       <nuxt-link :to="localePath('/')" class="flex items-center transition bg-[#746bb3] hover:opacity-80 active:opacity-60 hover:translate-y-10 active:translate-[-10px] rounded-[8px] py-[18px] pl-[38.5px] pr-[36px]">
         <Icon name="home_icon" class="home_icon" />
-        <span class="font-['Inter'] font-medium text-[15px] leading-[20px] text-white ml-[10px]">
+        <span class="inter font-medium text-[15px] leading-[20px] text-white ml-[10px]">
           Bosh sahifaga qaytish
         </span>
       </nuxt-link>
@@ -94,6 +94,12 @@ export default {
   100% {
     transform: rotate(360deg);
     transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 880px) {
+  .sad-face{
+    width: 35px;
   }
 }
 </style>

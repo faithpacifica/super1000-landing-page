@@ -9,7 +9,7 @@
       </div>
 
       <VueSlickCarousel class="h-[296px] w-[782px]" ref="carousel" v-bind="settings">
-        <div v-for="(item, index) in 1" :key="index" class="z-5 w-full">
+        <div v-for="(item, index) in 4" :key="index" class="z-5 w-full">
           <div class="main-box flex bg-white dark:bg-[#1A1D27] dark:border-[#ffffff1f] dark:border dark:border-solid border border-solid p-[16rem] rounded-[28rem] h-[296px]">
             <div class="main-box__img-wrapper max-w-[214px] w-full">
               <img class="rounded-[28rem] w-full h-full" src="@/assets/images/car-main.jpg" alt="" />
@@ -17,14 +17,14 @@
 
             <div class="main-box-info flex flex-col justify-end ml-[28rem] w-full">
               <Icon name="quote" class="!w-[40px] !h-[27px] mb-[18rem] mt-[14rem]" />
-              <p class="mb-[20px] font-['Inter'] text-[18rem] leading-[22rem] text-[#373A43] dark:text-white font-normal">
+              <p class="mb-[20px] inter text-[18rem] leading-[22rem] text-[#373A43] dark:text-white font-normal">
                 Super 1000 loyihasi asoschilariga o‘ziming minnatdorchiligimni
                 bilidirgan bo‘lardim. Loyihaning asosiy maqsadi treyding
                 darslari bo‘lishiga qaramay, boshqa foydalik kontent foydasini
                 aytib o‘tmaslik noshkurlik bo‘lib qoladi. Loyiha uchun rahmat!
               </p>
-              <SectionTitle class="mb-[2rem] font-['Poppins'] font-semibold text-[27rem] leading-[130%] text-[#373A43] dark:text-white" :title="'Pulatov Jasurbek'" />
-              <p class="font-['Inter'] font-normal text-[16rem] leading-[130%] text-[#84868C] dark:text-[#ffffff99]">
+              <SectionTitle class="mb-[2rem] poppins-font font-semibold text-[27rem] leading-[130%] text-[#373A43] dark:text-white" :title="'Pulatov Jasurbek'" />
+              <p class="inter font-normal text-[16rem] leading-[130%] text-[#84868C] dark:text-[#ffffff99]">
                 Loyiha ishtirokchisi
               </p>
             </div>
@@ -90,6 +90,14 @@ export default {
 </script>
 
 <style lang="scss">
+.staff-carousel .slick-list{
+  padding: 0 !important;
+}
+
+.staff-carousel .slick-arrow{
+  display: none !important;
+}
+
 .staff-carousel {
   .main-box {
     border: 1px solid rgba(17, 20, 45, 0.12);

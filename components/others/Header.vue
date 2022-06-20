@@ -1,8 +1,7 @@
 <template>
 <div class="header-section ">
-  <div class="container header h-[84px] bg-white dark:dark-shadow  dark:bg-[#1A1D27] absolute mt-[32rem] mb-[26rem] w-full rounded-[24px] px-[36rem]  -640:px-[15px] py-[26px] z-[90]">
-    <div class="">
-      <div class="">
+  <div class="container header h-[84px] bg-white dark:dark-shadow  dark:bg-[#1A1D27] absolute mt-[32rem] mb-[26rem] w-full rounded-[24px] px-[36rem]  z-[90] pt-[23px] pb-[25.3px]">
+
         <div class="flex-center-between">
           <div class="language-dropdown w-[140px] -640:w-[130px]">
             <div class="flex-center gap-[4rem] relative language-options">
@@ -81,8 +80,6 @@
             <ThemeToggler />
           </div>
         </div>
-      </div>
-    </div>
   </div>
 </div>
 </template>
@@ -161,12 +158,12 @@ export default {
 
 .header {
   border: 1px solid rgba(17, 20, 45, 0.12);
-  box-shadow: 3px 19px 62px 36px rgba(227, 230, 236, 0.68);
+  box-shadow: 0 10px 34px #E3E6EC;
 
 }
 
 .dark .header {
-  box-shadow: 8px 18px 54px 28px rgba(0, 0, 0, 0.66);
+  box-shadow: 0 10px 34px #010207;
 }
 
 @media screen and (min-width: 370px) and (max-width: 767px) {

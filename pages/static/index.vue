@@ -1,10 +1,10 @@
 <template>
-<div class="pt-[144rem] pb-[64rem] dark:bg-[#1A1D27]">
+<div class="static-section pt-[144rem] pb-[64rem] dark:bg-[#1A1D27]">
   <div class="container">
-
+ <div data-aos="fade-left" class="static__text lg:mx-[200rem] sm:mx-[15px]">
       <SectionTitle class="text-center mb-[33rem] mt-[38rem] dark:text-white" :title="'Qanday qilib Dubaydan uy sotib olib yashash mumkin?'" />
       <p  class="
-            font-['Inter']
+            inter
             text-[16rem]
             leading-[22rem]
             text-[#373A43]
@@ -18,7 +18,7 @@
         <br />Lekin uning yordamida Foreksda ma'lum darajada pul ishlab olishi mumkin! Professional treyderlar ishlash vaqtida turli xil vositalar to'plamlaridan foydalanishadi: OAVlaridagi axborotdan tortib (fundamental tahlil asoslari) to juda ko'p miqdordagi indikatorlar, maslahatchilar va ekspertlargacha. Har kuni bir treyder taxminan 4 trillion dollar bilan yuzma-yuz kelib, ularning ma'lum bir qismi unga tegishli bo'lishi mumkin. Dimlomli moliyachi va tahlilchi bo'lish shart emas, balki valyuta birjalarida savdo qilish mexanizmini o'rganish uchun mantiqiy fikrlash va biroz sabr qilish etarlidir.
         Foreks bozorining afzalliklaridan biri kompaniyaning kredit elkasi hisoblanadi, uning yordamida hisob-varag'idagi ozgina mablag' 100, 200 yoki 600 marta ortishi mumkin. Shu tarzda katta dividendlar bilan yirik bitimlar tuzish uchun o'z ixtiyortingizda katta mablag' olinishgiz mumkin. Biroq savdo yelkasi xatarlarni ham oshiradi. Shuning uchun Foreksda ishlashni boshlar ekansiz, kapitalni boshqarish metodlarini esda tutish kerak.
       </p>
-
+ </div>
     </div>
   </div>
 

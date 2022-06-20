@@ -13,6 +13,7 @@
     </VueSlickCarousel>
   </div>
 
+ <!-- LIGHT -->
   <div v-else class="sponsors-card-wrapper container  sm:pb-[64rem] ">
     <VueSlickCarousel v-if="sponsors || sponsors.length" v-bind="settings" ref="sponsorsCarousel" class="overflow-hidden ">
       <div v-for="(item, i) in sponsors" :key="i" class="overflow-hidden ">
@@ -26,10 +27,10 @@
 
   <!-- Arrows positionda -->
   <div class="">
-    <div @click.prevent="slidePrev" class="prev cursor-pointer absolute top-[150px] left-[120rem]">
+    <div @click.prevent="slidePrev" class="prev cursor-pointer opacity-0 transition durasion-300 absolute top-[150px] left-[120rem]">
       <Icon name="arrow_left" class="w-[28px] h-[28px]" />
     </div>
-    <div @click.prevent="slideNext" class="next cursor-pointer absolute right-[120rem] top-[150px]">
+    <div @click.prevent="slideNext" class="next cursor-pointer opacity-0 transition durasion-300  absolute right-[120rem] top-[150px]">
       <Icon name="arrow_right" class="w-[28px] h-[28px]" />
     </div>
   </div>
@@ -37,7 +38,7 @@
 </template>
 
 <script>
-import {  mapGetters} from 'vuex'
+import {mapGetters} from 'vuex'
 import SectionTitle from '~/components/common/SectionTitle.vue'
 export default {
   components: {
@@ -136,12 +137,25 @@ export default {
 
 <style lang="scss">
 .sponsors-card-wrapper {
+    transition: 0.3s ease;
   .slick-initialized .slick-slide {
     display: flex !important;
     justify-content: center !important;
-    ;
   }
 }
+
+.sponsors:hover .prev, .sponsors:hover .next{
+  transition: 0.3s ease;
+      opacity: 1 !important;
+  }
+
+.sponsors:active .prev, .sponsors:active .next{
+    transition: 0.3s ease;
+    transform:scale(1.3);
+    font-weight: bold;
+
+    }
+
 
 .sponsor-card {
   border: 1px solid rgba(17, 20, 45, 0.12);

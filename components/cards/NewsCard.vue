@@ -1,7 +1,7 @@
 <template>
     <!-- to="/news/_slug" -->
   <nuxt-link
-  :to="localePath('/news/_slug')" 
+  :to="localePath('/news/_slug')"
     class="
       news-card
       flex flex-col
@@ -24,7 +24,7 @@
       <p
         class="
           news-card__date
-          font-['Inter']
+          inter
           text-[16rem]
           leading-[21rem]
           text-[#84868C]
@@ -37,7 +37,7 @@
       <div
         class="
           news-card__title
-          font-['Poppins'] font-semibold
+          poppins-font font-semibold
           text-[20rem]
           leading-[26rem]
           text-[#373A43]
@@ -51,7 +51,7 @@
       <p
         class="
           news-card__text
-          font-['Inter']
+          inter
           text-[16rem]
           leading-[21rem]
           text-[#373A43]
@@ -69,7 +69,7 @@
             text-[16rem]
             inline-block
             leading-[20rem]
-            font-['Poppins']
+            poppins-font
             text-[#84868C]
             dark:text-[#A3A5A9]
             transition

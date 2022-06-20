@@ -17,8 +17,8 @@
       <ul class="footer__links flex gap-[24rem]">
         <li>
           <nuxt-link class="
-                font-['Poppins]
-                text-[16px]
+                poppins-font
+                text-[16rem]
                 leading-[31rem]
                 transition
                 hover:text-[#6D35E1]
@@ -28,8 +28,8 @@
         </li>
         <li>
           <nuxt-link class="
-                font-['Poppins]
-                text-[16px]
+                poppins-font
+                text-[16rem]
                 leading-[31rem]
                 transition
                 hover:text-[#6D35E1]
@@ -41,14 +41,14 @@
         </li>
         <li>
           <nuxt-link class="
-                font-['Poppins]
-                text-[16px]
+                poppins-font
+                text-[16rem?]
                 leading-[31rem]
                 transition
                 hover:text-[#6D35E1]
                  active:opacity-60
               "
-               :to="localePath('/')"
+               :to="localePath('/static')"
               >Ommaviy offerta
           </nuxt-link>
         </li>
@@ -66,7 +66,7 @@
         "></div>
 
     <div class="footer-bottom flex-center justify-between">
-      <p class="reserved font-['Poppins'] text-[13px] leading-[17px] opacity-50">“Super 1000” © 2020. <span>Barcha huquqlar himoyalangan.</span></p>
+      <p class="reserved poppins-font text-[13px] leading-[17px] opacity-50">“Super 1000” © 2020. <span>Barcha huquqlar himoyalangan.</span></p>
 
       <div class="footer-socials flex items-center">
         <div class="hero-socials_wrapper flex gap-[9rem] mr-[8rem]">
@@ -94,7 +94,7 @@
       </div>
 
       <div class="made-by flex items-center">
-        <p class="mr-[8rem] font-['Poppins] text-[13px] leading-[17px]  ring-opacity-50
+        <p class="mr-[8rem] poppins-font text-[13px] leading-[17px]  ring-opacity-50
         hover:text-[#B69AF0]">Sayt ishlab chiquvchi:</p>
         <Icon name="uic_icon" class="w-[33rem] h-[17rem]" />
       </div>

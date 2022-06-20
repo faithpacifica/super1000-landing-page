@@ -8,7 +8,7 @@
         <div class="inline-flex mb-[16px]">
           <h2 class="
                 hero-title
-                font-['Poppins']
+                poppins-font
                 inline
                 font-semibold
                 text-[48rem]
@@ -19,14 +19,14 @@
             <span> {{$t('header.heroTitle1')}} </span>
             <div>
               <span>{{$t('header.heroTitle2')}}</span>
-              <img class="inline w-[48px] h-[48px]" src="@/assets/images/flag.png" alt="face" />
-              <img class="inline w-[48px] h-[48px]" src="@/assets/images/face-sad.png" alt="face" />
+              <img class="inline w-[48px] h-[48px]" src="@/assets/images/flag.png" alt="flag" />
+              <img class="inline w-[48px] h-[48px]" src="@/assets/images/emoji-smile.png" alt="emoji" />
             </div>
           </h2>
         </div>
         <p class="
               hero-text
-              font-['Inter']
+              inter
               text-[15px]
               leading-[28rem]
               text-[#22343E]
@@ -60,7 +60,8 @@
               </a>
             </div>
             <span class="
-                  font-['Inter']
+                  inter
+                  font-semibold
                   text-[14px]
                   leading-[17rem]
                   text-[#808191]
@@ -76,7 +77,8 @@
               <Icon name="globus_icon" class="hero-icon globe" />
               <span class="
                     ml-[8px]
-                    font-['Inter']
+                    inter
+                    font-semibold
                     text-[14px]
                     leading-[17rem]
                     text-[#808191]

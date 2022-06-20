@@ -43,7 +43,7 @@
                 name: 'male_user',
                 subIconBg: 'bg-[#ffce732e]',
                 subText: 'Ariza topshirgan erkaklar soni',
-                numbers: '60 000',
+                numbers: '60000',
                 unit: 'ta',
                 percentage: '60',
               }"
@@ -54,7 +54,7 @@
                 name: 'female_user',
                 subIconBg: 'bg-[#55d8f52e]',
                 subText: 'Ariza topshirgan ayollar soni',
-                numbers: '40 000',
+                numbers: '40000',
                 unit: 'ta',
                 percentage: '40',
               }"
@@ -86,7 +86,7 @@
               iconRounded: 'bg-[#6ebcf22e]',
               iconBg: 'bg-[#6EBCF2]',
               text: 'O‘quvchilarning kurs davomidagi sof foydasi',
-              numbers: '108 000',
+              numbers: '108000',
               unit: '$',
             }"
           />
