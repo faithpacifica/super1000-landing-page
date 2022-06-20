@@ -27,7 +27,7 @@
         <p class="
               hero-text
               font-['Inter']
-              text-[15rem]
+              text-[15px]
               leading-[28rem]
               text-[#22343E]
               dark:text-white
@@ -61,7 +61,7 @@
             </div>
             <span class="
                   font-['Inter']
-                  text-[14rem]
+                  text-[14px]
                   leading-[17rem]
                   text-[#808191]
                   hover:text-[#6D35E1]
@@ -77,7 +77,7 @@
               <span class="
                     ml-[8px]
                     font-['Inter']
-                    text-[14rem]
+                    text-[14px]
                     leading-[17rem]
                     text-[#808191]
                     hover:text-[#6D35E1]
@@ -101,8 +101,6 @@
     <img class="mix-loader-two absolute right-[5%] top-[30%]" src="@/assets/images/icon-yellow-round.png" alt="" />
   </div>
 
-  <!-- Hero bottom shadow -->
-  <!-- <img class="absolute bottom-0 w-full z=0" src="@/assets/images/hero-shadow.png" alt="shadow"> -->
 </div>
 </template>
 

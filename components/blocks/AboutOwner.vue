@@ -137,7 +137,7 @@
                 <span
                   class="
                     font-medium
-                    text-[14rem]
+                    text-[14px]
                     leading-[18rem]
                     dark:text-white
                   "
@@ -195,7 +195,7 @@
                 <span
                   class="
                     font-medium
-                    text-[14rem]
+                    text-[14px]
                     leading-[18rem]
                     dark:text-white
                   "

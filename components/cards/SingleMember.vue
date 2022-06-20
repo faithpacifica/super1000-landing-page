@@ -8,7 +8,7 @@
 
   <div class="absolute bottom-[8rem] left-[8rem] right-[8rem] z-10  card-info text-white rounded-[12rem] text-center py-[8rem]">
     <h6 class="font-['Poppins'] font-semibold text-[16rem] leading-[21rem]">{{name}}</h6>
-    <p class="single-member__position font-['Inter'] text-[12rem] leading-[15rem]">{{position}}</p>
+    <p class="single-member__position font-['Inter'] text-[12px] leading-[15px]">{{position}}</p>
   </div>
 </div>
 </template>

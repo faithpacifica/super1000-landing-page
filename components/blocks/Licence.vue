@@ -4,7 +4,7 @@
     <div class="flex flex-col ">
       <SectionTitle class="mb-[20rem] text-center dark:text-white" :title="'Kurs patenti'" />
       <p data-aos="fade-left" class="mb-[8px]  font-['Inter']
-                text-[16rem]
+                text-[16px]
                 leading-[22rem]
                 text-[#373A43] dark:text-[#ffffffbf] text-justify">
         Ishlab topish — eng asosiy sabab sifatida Har bir kishi o'z hayotida
@@ -21,7 +21,7 @@
         mumkin.
       </p>
       <p data-aos="fade-left" class="font-['Inter']
-                text-[16rem]
+                text-[16px]
                 leading-[22rem]
                 text-[#373A43] dark:text-[#ffffffbf] text-justify">
         Foreks — global birja shaklida tashkil etilgan xalqaro valyuta
