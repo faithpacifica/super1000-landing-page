@@ -1,6 +1,6 @@
 <template>
 <div class="py-[32px] bg-[#F7F8FA] dark:bg-[#2B2F3A] overflow-hidden max-w-[1640px] mx-auto">
-  <SectionTitle class="mb-[22rem] text-center dark:text-white" :title="'Kurs ishtirokchilari'" />
+  <SectionTitle class="mb-[22rem] text-center dark:text-white" :title="$t('participants_title')" />
 
   <div class="participants-carousel relative  ">
     <div class="marquee">

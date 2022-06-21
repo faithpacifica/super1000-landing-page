@@ -12,10 +12,10 @@
     <div class="numbers">
       <div class=" poppins-font font-bold text-[40rem] leading-[52rem] text-white">
         <span>
-          <number ref="number1" :to="numbers"  :duration="5" :delay="2" easing="Power1.easeOut" />
-         </span>
-          <!-- {{numbers}} -->
-         <span> {{unit}}</span>
+          <number ref="number1" :to="numbers" :duration="5" :delay="2" easing="Power1.easeOut" />
+        </span>
+        <!-- {{numbers}} -->
+        <span> {{unit}}</span>
       </div>
       <p class="inter text-[16rem] leading-[21rem] text-white">{{text}}</p>
     </div>
@@ -43,11 +43,11 @@ export default {
     numbers: String,
     unit: String
   },
-  methods:{
+  methods: {
 
-      playAnimation() {
-            this.$refs.number1.play()
-        }
+    playAnimation() {
+      this.$refs.number1.play()
+    }
   }
 }
 </script>

@@ -163,7 +163,8 @@
                 <path class="dark:stroke-[#FFCE73] stroke-[#6D35E1]" d="M13.3335 6.66659V4.99992C13.3335 4.55789 13.1579 4.13397 12.8453 3.82141C12.5328 3.50885 12.1089 3.33325 11.6668 3.33325H5.00016C4.55814 3.33325 4.13421 3.50885 3.82165 3.82141C3.50909 4.13397 3.3335 4.55789 3.3335 4.99992V11.6666C3.3335 12.1086 3.50909 12.5325 3.82165 12.8451C4.13421 13.1577 4.55814 13.3333 5.00016 13.3333H6.66683" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
               <div v-if="copied" class="tooltip-customed absolute bg-black  dark:bg-white p-[6px] ease-linear transition duration-500  rounded-[4px] text-white dark:text-black top-[-45px] right-0">
-                Nusxalandi
+                <!-- Nusxalandi -->
+                  {{ $t('copied')}}
               </div>
             </button>
           </div>

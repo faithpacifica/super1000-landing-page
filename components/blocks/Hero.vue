@@ -16,9 +16,9 @@
                 text-[#373A43]
                 dark:text-white
               ">
-            <span> {{$t('header.heroTitle1')}} </span>
+            <span> {{$t('hero.heroTitle1')}} </span>
             <div>
-              <span>{{$t('header.heroTitle2')}}</span>
+              <span>{{$t('hero.heroTitle2')}}</span>
               <img class="inline w-[48px] h-[48px]" src="@/assets/images/flag.svg" alt="flag" />
               <img class="inline w-[48px] h-[48px]" src="@/assets/images/emoji-smile.svg" alt="emoji" />
             </div>
@@ -33,7 +33,8 @@
               dark:text-white
               dark:opacity-75
             ">
-          Tez orada yangi talqindagi foydali loyihalar bilan qaytamiz
+          <!-- Tez orada yangi talqindagi foydali loyihalar bilan qaytamiz -->
+          {{$t('hero.hero_text')}}
         </p>
         <div class="stick my-[25px] max-w-[580rem]"></div>
         <div class="hero-socials flex items-center">

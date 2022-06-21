@@ -75,7 +75,9 @@
             transition
             dark:hover:!text-[#FFCE73]
           "
-          >Batafsil
+          >
+          <!-- Batafsil -->
+          {{ $t('more')}}
         </span>
 
         <Icon

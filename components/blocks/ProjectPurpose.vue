@@ -4,23 +4,16 @@
     <div class="section-inner flex justify-between ">
 
       <div class="project-purpose__text font-['Inter] flex flex-col pt-[48rem] md:pl-[52rem] flex-start max-w-[624rem]">
-        <SectionTitle class="mb-[16rem] dark:color-white" :title="'Loyiha maqsadi nima edi?'" />
+        <SectionTitle class="mb-[16rem] dark:color-white" :title="$t('project_purpose.title')" />
 
         <p data-aos="fade-left" class="mb-[8px] inter text-[16px] leading-[22px] ">
-          Texnoman loyihasi axborot texnologiyalari, Internet, ijtimoiy media,
-          Uznet, yuqori texnologiyalar, mobil qurilmalar hamda texnologiyalar
-          bilan bog'liq kompaniyalar haqida yangiliklar, tahliliy maqolalar,
-          xabarlar, ma'lumot berib borishga mo'ljallangan.
+         {{ $t('project_purpose.text_one')}}
         </p>
         <p data-aos="fade-left" class="mb-[8px] inter text-[16px] leading-[22px]">
-          Endi saytimizda umumiy texnologiyalar olamiga oid barcha yangiliklar
-          qo'yib boriladi. Foydalanuvchilarimiz bemalol o'z fikrlarini
-          bildirishlari, o'zlarining shaxsiy bloglarida maqolalarini chop
-          etishlari mumkin.
+           {{ $t('project_purpose.text_two')}}
         </p>
         <p data-aos="fade-left" class="mb-[8px] inter text-[16px] leading-[22px]">
-          Texnoman loyihasi nafaqat sayt ma'muriyati tomonidan, balki
-          foydalanuvchilar tomonidan ham rivojlantirib boriladi.
+           {{ $t('project_purpose.text_three')}}
         </p>
       </div>
 

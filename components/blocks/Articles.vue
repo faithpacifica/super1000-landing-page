@@ -2,7 +2,7 @@
 <div class="articles py-[64px] dark:bg-[#1A1D27]">
   <div class="container">
     <div class="section-top flex items-center justify-between mb-[28rem]">
-      <SectionTitle class="dark:text-white" :title="'Sohaga doir maqolalar'" />
+      <SectionTitle class="dark:text-white" :title="$t('articles.title')" />
 
       <nuxt-link class="all-news flex items-center" :to="localePath('/news')"  >
       <!-- to="/news" -->
@@ -11,7 +11,10 @@
               leading-[26rem]
               font-medium poppins-font
               text-[#84868C]
-            ">Barcha yangiliklar</span>
+            ">
+            <!-- Barcha yangiliklar -->
+              {{ $t('articles.all_news')}}
+            </span>
         <Icon name="arrow_right" class="arrow_right w-[24px] ml-[4px] h-[24px] font-[#84868C]" />
       </nuxt-link>
     </div>

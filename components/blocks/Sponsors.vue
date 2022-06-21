@@ -1,6 +1,6 @@
 <template>
 <div class="sponsors bg-[#F7F8FA] dark:bg-[#2B2F3A] relative pt-[32rem]">
-  <SectionTitle class="text-center mb-[20rem] dark:text-white" :title="'Hamkorlar'" />
+  <SectionTitle class="text-center mb-[20rem] dark:text-white" :title="$t('sponsors_title')" />
 
   <!-- DARK -->
   <div v-if="dark" class="sponsors-card-wrapper container  sm:pb-[64rem] ">

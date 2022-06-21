@@ -10,7 +10,10 @@
 
     <nuxt-link class="more opacity-0  flex items-center "  :to="localePath('/news')"  >
      <!-- to="news/_slug" -->
-      <span class="text-[16rem] inline-block leading-[20rem] poppins-font text-white">Batafsil</span>
+      <span class="text-[16rem] inline-block leading-[20rem] poppins-font text-white">
+        <!-- Batafsil -->
+          {{ $t('more')}}
+        </span>
       <Icon name="more" class="arrow_right self-baseline ml-[4px] transition" />
     </nuxt-link>
   </div>

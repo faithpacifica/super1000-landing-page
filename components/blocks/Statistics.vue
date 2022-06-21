@@ -3,18 +3,7 @@
     <div class="container statistics__container flex">
       <!-- PIE TODO:what to use?-->
       <div class="chart-wrapper">
-        <div>
-    <!-- <client-only placeholder="Loading...">
-      <pie-chart
-        :chart-options="options"
-        :chart-data="data"
-        :height="100"
-        :width="300"
-        chart-id="pieChart"
-      />
-    </client-only> -->
-  </div>
-        <div class="chart self-baseline mr-[32px] p-[8px] rounded-[50%]">
+         <div class="chart self-baseline mr-[32px] p-[8px] rounded-[50%]">
           <div class="chart-pie">
             <img src="@/assets/images/pie.png" alt="" />
           </div>
@@ -30,9 +19,9 @@
               name: 'people_icon',
               iconRounded: 'bg-[#77b7912e]',
               iconBg: 'bg-[#77B791]',
-              text: 'Loyihaga ariza topshirganlar soni',
+              text:  $t('statistics.applicants_number'),
               numbers: '2647',
-              unit: 'ta',
+              unit: $t('statistics.unit'),
             }"
           />
 
@@ -42,9 +31,9 @@
               v-bind="{
                 name: 'male_user',
                 subIconBg: 'bg-[#ffce732e]',
-                subText: 'Ariza topshirgan erkaklar soni',
+                subText:  $t('statistics.males_number'),
                 numbers: '60000',
-                unit: 'ta',
+                unit: $t('statistics.unit'),
                 percentage: '60',
               }"
             />
@@ -53,9 +42,9 @@
               v-bind="{
                 name: 'female_user',
                 subIconBg: 'bg-[#55d8f52e]',
-                subText: 'Ariza topshirgan ayollar soni',
+                subText:$t('statistics.females_number'),
                 numbers: '40000',
-                unit: 'ta',
+                unit:$t('statistics.unit'),
                 percentage: '40',
               }"
             />
@@ -73,7 +62,7 @@
               name: 'school_hat',
               iconRounded: 'bg-[#ffce732e]',
               iconBg: 'bg-[#F2A360]',
-              text: 'Muvaffaqiyatli qabul qilinganlarning soni',
+              text:$t('statistics.accepted_applicants'),
               numbers: '867',
               unit: 'ta',
             }"
@@ -85,12 +74,13 @@
               name: 'dollar_coin',
               iconRounded: 'bg-[#6ebcf22e]',
               iconBg: 'bg-[#6EBCF2]',
-              text: 'O‘quvchilarning kurs davomidagi sof foydasi',
+              text: $t('statistics.revenue'),
               numbers: '108000',
               unit: '$',
             }"
           />
         </div>
+
       </div>
     </div>
   </div>

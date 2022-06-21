@@ -1,13 +1,13 @@
 <template>
 <div class="staff-opinion py-[64rem] dark:bg-[#1A1D27]">
   <div class="staff-carousel container w-full">
-    <SectionTitle class="mb-[24rem] text-center dark:text-white" :title="'Loyiha haqida fikrlar'" />
+    <SectionTitle class="mb-[24rem] text-center dark:text-white" :title="$t('opinion.title')" />
     <!-- ----------------- -->
     <div  class="carousel-wrapper flex lg:justify-between sm:justify-center">
 
       <div @click.prevent="slidePrev" class="side-boxes  max-w-[178px] w-full h-[296px] rounded-[28rem] overflow-hidden shadow-effect cursor-pointer relative">
         <img class="rounded-[28rem] h-full w-full transition duration-400" src="@/assets/images/car-1.jpg" alt="" />
-        <svg class="arrow-svg absolute  prev   md:bottom-[140px] lg:left-[70px] sm:left-[25px] z-40" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="arrow-svg absolute  prev   active:scale-125  md:bottom-[140px] lg:left-[70px] sm:left-[25px] z-40" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6.66675 16H25.3334M6.66675 16L14.6667 24M6.66675 16L14.6667 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </div>
@@ -60,7 +60,7 @@
 
       <div  @click.prevent="slideNext"  class="side-boxes  max-w-[178px] w-full h-[296px] shadow-effect rounded-[28rem] overflow-hidden cursor-pointer relative">
         <img class="rounded-[28rem] h-full w-full transition duration-400" src="@/assets/images/car-2.jpg" alt="" />
-         <svg class="arrow-svg absolute  next lg:right-[70px] md:bottom-[140px] sm:right-[25px] z-40" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg class="arrow-svg absolute active:scale-125 next lg:right-[70px] md:bottom-[140px] sm:right-[25px] z-40" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M25.3334 16H6.66675M25.3334 16L17.3334 24M25.3334 16L17.3334 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </div>
@@ -133,7 +133,6 @@ export default {
 }
 
 .shadow-effect {
-
   &::after {
     content: '';
     position: absolute;
@@ -160,9 +159,15 @@ export default {
    justify-content: center;
   }
 
-  .side-boxes img{
+  .side-boxes {
+    &:hover{
+       background-image: none !important;
+    }
+    img{
     display: none;
   }
+  }
+
   .shadow-effect::after {
     width: none;
     content: none;

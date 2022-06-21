@@ -24,8 +24,9 @@
                 hover:text-[#6D35E1]
                 active:opacity-60"
                 :to="localePath('/news')"
-               >Yangiliklar
-               <!-- to="/news" -->
+               >
+               <!-- Yangiliklar -->
+              {{ $t('footer.link_one')}}
           </nuxt-link>
         </li>
         <li>
@@ -38,7 +39,9 @@
                  active:opacity-60
               "
                :to="localePath('/static')"
-              >Ommaviy offerta
+              >
+              <!-- Ommaviy offerta -->
+              {{ $t('footer.link_two')}}
           </nuxt-link>
         </li>
       </ul>
@@ -55,7 +58,12 @@
         "></div>
 
     <div class="footer-bottom flex-center justify-between">
-      <p class="reserved poppins-font text-[13px] leading-[17px] opacity-50">“Super 1000” © 2020. <span>Barcha huquqlar himoyalangan.</span></p>
+      <p class="reserved poppins-font text-[13px] leading-[17px] opacity-50">“Super 1000” © 2020.
+        <span>
+          <!-- Barcha huquqlar himoyalangan. -->
+          {{ $t('footer.all_rights')}}
+        </span>
+      </p>
 
       <div class="footer-socials flex items-center">
         <div class="hero-socials_wrapper flex gap-[9rem] mr-[8rem]">
@@ -84,7 +92,7 @@
 
       <div class="made-by flex items-center">
         <p class="mr-[8rem] poppins-font text-[13px] leading-[17px]  ring-opacity-50
-        hover:text-[#B69AF0]">Sayt ishlab chiquvchi:</p>
+        hover:text-[#B69AF0]">  {{ $t('footer.created_by')}}:</p>
         <Icon name="uic_icon" class="w-[33rem] h-[17rem]" />
       </div>
     </div>
