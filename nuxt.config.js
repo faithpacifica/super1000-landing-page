@@ -8,7 +8,7 @@ export default {
   },
   ssr: false,
   head: {
-    title: 'super 1000',
+    title: 'Super 1000',
     htmlAttrs: {
       lang: 'en',
     },
@@ -36,6 +36,8 @@ export default {
     {
       src: "~/plugins/moment.js",
     },
+    { src: "@/plugins/vClickOutside", ssr: false }
+
     // {src: '~/plugins/chart.js', mode: 'client'}
   ],
 

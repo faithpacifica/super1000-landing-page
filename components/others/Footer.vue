@@ -22,17 +22,6 @@
                 leading-[31rem]
                 transition
                 hover:text-[#6D35E1]
-                 active:opacity-60
-              "  :to="localePath('/')">Loyiha haqida
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link class="
-                poppins-font
-                text-[16rem]
-                leading-[31rem]
-                transition
-                hover:text-[#6D35E1]
                 active:opacity-60"
                 :to="localePath('/news')"
                >Yangiliklar

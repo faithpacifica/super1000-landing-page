@@ -5,8 +5,8 @@
     <!-- ----------------- -->
     <div  class="carousel-wrapper flex lg:justify-between sm:justify-center">
 
-      <div @click.prevent="slidePrev" class="side-boxes  max-w-[178px] w-full h-[296px] shadow-effect cursor-pointer relative">
-        <img class="rounded-[28rem] h-full w-full" src="@/assets/images/car-1.jpg" alt="" />
+      <div @click.prevent="slidePrev" class="side-boxes  max-w-[178px] w-full h-[296px] rounded-[28rem] overflow-hidden shadow-effect cursor-pointer relative">
+        <img class="rounded-[28rem] h-full w-full transition duration-400" src="@/assets/images/car-1.jpg" alt="" />
         <svg class="arrow-svg absolute  prev   md:bottom-[140px] lg:left-[70px] sm:left-[25px] z-40" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6.66675 16H25.3334M6.66675 16L14.6667 24M6.66675 16L14.6667 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
@@ -58,8 +58,8 @@
         </div> -->
       </VueSlickCarousel>
 
-      <div  @click.prevent="slideNext"  class="side-boxes  max-w-[178px] w-full h-[296px] shadow-effect   cursor-pointer relative">
-        <img class="rounded-[28rem] h-full w-full" src="@/assets/images/car-2.jpg" alt="" />
+      <div  @click.prevent="slideNext"  class="side-boxes  max-w-[178px] w-full h-[296px] shadow-effect rounded-[28rem] overflow-hidden cursor-pointer relative">
+        <img class="rounded-[28rem] h-full w-full transition duration-400" src="@/assets/images/car-2.jpg" alt="" />
          <svg class="arrow-svg absolute  next lg:right-[70px] md:bottom-[140px] sm:right-[25px] z-40" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M25.3334 16H6.66675M25.3334 16L17.3334 24M25.3334 16L17.3334 8" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
@@ -123,7 +123,17 @@ export default {
   }
 }
 
+.side-boxes:hover{
+  transition: 0.4s ease-in-out;
+  background-image:linear-gradient(180deg, rgba(109, 53, 225, 0.3) 100%, rgba(109, 53, 225, 0.2) 11.39%, #6d35e1 112.35%);
+  img{
+    transition: 0.4s ease-in-out;
+    transform: scale(1.2);
+  }
+}
+
 .shadow-effect {
+
   &::after {
     content: '';
     position: absolute;

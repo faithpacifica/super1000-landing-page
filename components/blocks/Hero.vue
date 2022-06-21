@@ -19,8 +19,8 @@
             <span> {{$t('header.heroTitle1')}} </span>
             <div>
               <span>{{$t('header.heroTitle2')}}</span>
-              <img class="inline w-[48px] h-[48px]" src="@/assets/images/flag.png" alt="flag" />
-              <img class="inline w-[48px] h-[48px]" src="@/assets/images/emoji-smile.png" alt="emoji" />
+              <img class="inline w-[48px] h-[48px]" src="@/assets/images/flag.svg" alt="flag" />
+              <img class="inline w-[48px] h-[48px]" src="@/assets/images/emoji-smile.svg" alt="emoji" />
             </div>
           </h2>
         </div>

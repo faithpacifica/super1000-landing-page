@@ -69,7 +69,7 @@
             text-[16rem]
             inline-block
             leading-[20rem]
-            poppins-font
+            inter
             text-[#84868C]
             dark:text-[#A3A5A9]
             transition

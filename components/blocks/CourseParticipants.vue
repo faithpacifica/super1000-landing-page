@@ -1,8 +1,8 @@
 <template>
-<div class="py-[32px] bg-[#F7F8FA] dark:bg-[#2B2F3A] overflow-hidden">
+<div class="py-[32px] bg-[#F7F8FA] dark:bg-[#2B2F3A] overflow-hidden max-w-[1640px] mx-auto">
   <SectionTitle class="mb-[22rem] text-center dark:text-white" :title="'Kurs ishtirokchilari'" />
 
-  <div class="participants-carousel relative mx-auto">
+  <div class="participants-carousel relative  ">
     <div class="marquee">
       <div class="marquee-content">
         <div class="marquee-item max-w-[100px] cursor-pointer relative" v-for="(item, i) in faces" :key="i">

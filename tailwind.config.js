@@ -5,7 +5,6 @@ for (let i = 1440; i >= 320; i--) {
 
 module.exports = {
   mode: 'jit',
-  // purge: {
     content: ["./src/**/*.{html,js,vue}"],
     theme: {
       extend: {
@@ -22,6 +21,5 @@ module.exports = {
         ...screens,
       },
     },
-  // },
   darkMode: 'class'
 }

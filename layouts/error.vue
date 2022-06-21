@@ -7,7 +7,7 @@
 
     <div class="flex flex-col flex-center-center text-center  pt-[24rem]">
       <h2 class="poppins-font inline font-semibold text-[48rem] leading-[62rem] text-[#373A43] dark:text-white mb-[54px]">
-        Ehh, ushbu sahifa topilmadi <img class="sad-face inline" width="49" src="@/assets/images/emoji-sad.png" alt="sad face">
+        Ehh, ushbu sahifa topilmadi <img class="sad-face inline" width="49" src="@/assets/images/emoji-sad.svg" alt="sad face">
         <!-- {{ $t('title.error') }}    -430:gap-[35rem] -400:gap-[33rem] gap-[70rem]-->
       </h2>
 

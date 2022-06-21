@@ -1,5 +1,5 @@
 <template>
-    <h4 class="poppins-font font-600 text-[32rem] leading-[41.5rem] " :class="color">
+    <h4 class="poppins-font font-semibold text-[32rem] leading-[41.5rem] tracking-[.5px] " :class="color">
       {{ title }}
     </h4>
 </template>

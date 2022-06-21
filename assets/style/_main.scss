@@ -2,7 +2,7 @@
 @import "fonts";
 $container: 1184;
 
-$fontFamily: "Inter", "Poppins";
+// $fontFamily: "Inter", "Poppins";
 
 :root {
   font-size: calc(
@@ -32,7 +32,7 @@ $fontFamily: "Inter", "Poppins";
 html,
 body {
   height: 100%;
-  font-family: Poppins, Inter, sans-serif;
+  // font-family: Poppins, Inter, sans-serif;
   font-style: normal;
   font-size: 16px;
 

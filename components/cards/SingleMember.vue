@@ -6,7 +6,7 @@
 
   <img :class="name == 'Aziz Halikov' ? 'z-7 absolute bottom-0 left-[4rem] right-[4rem]' : 'z-7 absolute bottom-0 left-[11rem] right-[11rem]'" :src="image" alt="photo member">
 
-  <div class="absolute bottom-[8rem] left-[8rem] right-[8rem] z-10  card-info text-white rounded-[12rem] text-center py-[8rem]">
+  <div :class="name == 'Aziz Halikov' ? 'bg-[#6d35e1b3]' : 'bg-[#84868c66]'" class="absolute bottom-[8rem] left-[8rem] right-[8rem] z-10  card-info text-white rounded-[12rem] text-center py-[8rem]">
     <h6 class="poppins-font font-semibold text-[16rem] leading-[21rem]">{{name}}</h6>
     <p class="single-member__position inter text-[12px] leading-[15px]">{{position}}</p>
   </div>
@@ -28,18 +28,7 @@ export default {
   border: 0.6px solid rgba(17, 20, 45, 0.12);
   transition: 0.3s ease;
 
-  &:hover {
-    transition: 0.3s ease;
-
-    .card-info {
-      transition: 0.3s ease;
-      background-color: rgba(109, 53, 225, 0.7);
-      // backdrop-filter: blur(29.6296px);
-    }
-  }
-
   .card-info {
-    background: rgba(132, 134, 140, 0.4);
     backdrop-filter: blur(29.6296px);
 
     .single-member__position {
@@ -47,4 +36,6 @@ export default {
     }
   }
 }
+
+
 </style>
