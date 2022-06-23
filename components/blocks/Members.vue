@@ -2,7 +2,7 @@
 <div class="py-[32rem] dark:bg-[#1A1D27]">
   <div  class="container">
     <SectionTitle class="mb-[20rem] text-center dark:text-white" :title="$t('members_title')" />
-    <div  class="members-wrapper mx-auto grid lg:grid-cols-5   sm:grid-cols-2  gap-[16rem] ">
+    <div  class="members-wrapper mx-auto grid lg:grid-cols-5  sm:grid-cols-2  gap-[16rem] ">
       <SingleMember
       data-aos="fade-left"
        class="single-member"
@@ -107,9 +107,19 @@ export default {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
- @media screen and (min-width: 320px) and (max-width: 500px) {
+ @media screen and (min-width: 370px) and (max-width: 500px) {
   .members-wrapper{
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .single-member:nth-child(3) {
+    order: -1;
+  }
+}
+
+ @media screen and (min-width: 370px) and (max-width: 640px) {
+  .members-wrapper_mobile{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 </style>

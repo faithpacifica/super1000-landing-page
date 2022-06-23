@@ -5,25 +5,48 @@
   <!-- DARK -->
   <div v-if="dark" class="sponsors-card-wrapper container  sm:pb-[64rem] ">
     <VueSlickCarousel v-if="sponsorsDark || sponsorsDark.length" v-bind="settings" ref="sponsorsCarousel" class="overflow-hidden ">
-      <div v-for="(item, i) in sponsorsDark" :key="i" class="overflow-hidden ">
+      <a :href="item.link" v-for="(item, i) in sponsorsDark" :key="i" class="sponsor-card__link overflow-hidden ">
         <div class="sponsor-card h-[108rem] w-[278rem]  flex justify-center items-center mt-[20rem] mb-[64rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
           <img :src="item.icon" alt="sponsor image" />
         </div>
-      </div>
+      </a>
     </VueSlickCarousel>
   </div>
 
  <!-- LIGHT -->
   <div v-else class="sponsors-card-wrapper container  sm:pb-[64rem] ">
     <VueSlickCarousel v-if="sponsors || sponsors.length" v-bind="settings" ref="sponsorsCarousel" class="overflow-hidden ">
-      <div v-for="(item, i) in sponsors" :key="i" class="overflow-hidden ">
+      <a :href="item.link" v-for="(item, i) in sponsors" :key="i" class="overflow-hidden ">
 
         <div class="sponsor-card h-[108rem] w-[278rem]  flex justify-center items-center mt-[20rem] mb-[64rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
           <img :src="item.icon" alt="sponsor image" />
         </div>
-      </div>
+      </a>
     </VueSlickCarousel>
   </div>
+
+<!-- MOBILE VERSION -->
+<div class="sponsors-wrapper__mobile ">
+
+  <!-- DARK -->
+ <div  v-if="dark" class="container flex flex-wrap justify-center items-center gap-[16rem] ">
+      <a :href="item.link" v-for="(item, i) in sponsorsDark" :key="i" class="inline-block ">
+        <div class="sponsor-card h-[108rem] w-[130px]  flex justify-center items-center mt-[20rem] mb-[15rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
+          <img :src="item.icon" alt="sponsor image" />
+        </div>
+      </a>
+  </div>
+
+  <!-- LIGHT -->
+ <div  v-else class="container flex flex-wrap justify-center items-center gap-[16rem] ">
+      <a :href="item.link" v-for="(item, i) in sponsors" :key="i" class="inline-block ">
+        <div class="sponsor-card h-[108rem] w-[130px]  flex justify-center items-center mt-[20rem] mb-[15rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
+          <img :src="item.icon" alt="sponsor image" />
+        </div>
+      </a>
+  </div>
+</div>
+
 
   <!-- Arrows positionda -->
   <div class="">
@@ -74,48 +97,56 @@ export default {
           {
             breakpoint: 767,
             settings: {
-              slidesToShow: 1
+              slidesToShow: 2
             }
           },
           {
             breakpoint: 575,
             settings: {
-              slidesToShow: 1
+              slidesToShow: 2
             }
           }
         ]
       },
       sponsors: [{
           icon: require('@/assets/images/logo-1.png'),
+          link:``
         },
         {
           icon: require('@/assets/images/logo-2.png'),
+          link:``
         },
         {
           icon: require('@/assets/images/logo-3.png'),
+          link:``
         },
         {
           icon: require('@/assets/images/logo-4.png'),
+          link:``
         },
-        {
-          icon: require('@/assets/images/logo-3.png'),
-        },
+        // {
+        //   icon: require('@/assets/images/logo-3.png'),
+        // },
       ],
       sponsorsDark: [{
           icon: require('@/assets/images/dark-logo-1.png'),
+          link:``
         },
         {
           icon: require('@/assets/images/dark-logo-2.png'),
+          link:``
         },
         {
           icon: require('@/assets/images/dark-logo-3.png'),
+          link:``
         },
         {
           icon: require('@/assets/images/dark-logo-4.png'),
+          link:``
         },
-        {
-          icon: require('@/assets/images/dark-logo-3.png'),
-        },
+        // {
+        //   icon: require('@/assets/images/dark-logo-3.png'),
+        // },
       ],
     }
   },
@@ -153,9 +184,7 @@ export default {
     transition: 0.3s ease;
     transform:scale(1.3);
     font-weight: bold;
-
     }
-
 
 .sponsor-card {
   border: 1px solid rgba(17, 20, 45, 0.12);
@@ -175,13 +204,24 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.12);
 
   &:hover {
-    background: #1a1d27;
+    background-color: #1a1d27;
     border: 1px solid rgba(255, 206, 115, 0.3);
     box-shadow: 0 10px 32px rgba(255, 206, 115, 0.2);
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1450px) {
+.sponsors-wrapper__mobile{
+  display: none;
+  img{
+    width: 100px;
+  }
+  @media screen and (min-width: 370px) and (max-width: 640px) {
+    display: block;
+  }
+}
+
+// -------------------------------------
+@media screen and (min-width: 640px) and (max-width: 1450px) {
   .sponsors {
     .prev {
       left: 20px;
@@ -205,17 +245,6 @@ export default {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 640px) {
-  .sponsors {
-    .prev {
-      top: 110px;
-    }
-
-    .next {
-      top: 110px;
-    }
-  }
-}
 
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   .sponsors-card-wrapper {
@@ -227,5 +256,22 @@ export default {
   .sponsors-card-wrapper {
     padding-bottom: 64rem;
   }
+}
+// @media screen and (min-width: 370px) and (max-width: 500px){
+//   .sponsor-card{
+//     width: 160px;
+//     img{
+//       width: 120px;
+//     }
+//   }
+// }
+
+ @media screen and (min-width: 370px) and (max-width: 640px) {
+  .sponsors-card-wrapper,.next, .prev{
+    display: none !important;
+  }
+  // .sponsors-wrapper_mobile{
+  //   display: block !important;
+  // }
 }
 </style>

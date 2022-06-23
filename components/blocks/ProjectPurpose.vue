@@ -66,7 +66,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 370px) and (max-width: 887px) {
+@media screen and (min-width: 370px) and (max-width: 960px) {
   .section-inner {
     display: block;
     padding-bottom: 48px;
@@ -88,6 +88,9 @@ export default {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .mix-loader{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 370px) and (max-width: 640px) {
@@ -95,9 +98,6 @@ export default {
     border-radius: 0;
   }
 
-  .mix-loader {
-    top: 0%;
-    left: 70%;
-  }
+
 }
 </style>

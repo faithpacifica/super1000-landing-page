@@ -23,7 +23,7 @@
       <SingleArticle
       v-for="(item, index) in articles"
       :key="index"
-      class="lg:col-span-4  w-[379rem] h-[330rem]  "
+      class="single-article lg:col-span-4  w-[379rem] h-[330rem]  "
       v-bind=" {
         text: item.text,
       image:item.image }"
@@ -79,9 +79,29 @@ export default {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 1024px) {
+@media screen and (min-width: 370px) and (max-width: 1024px) {
   .article-cards{
     justify-content: center;
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 650px){
+  .single-article{
+    min-width: 450px;
+    min-height: 250px;
+    overflow:hidden;
+    img{
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 370px) and (max-width: 450px){
+  .single-article{
+    min-width: 350px;
+    min-height: 225px;
+    overflow:hidden;
+      img{
+      width: 100%;
+    }
   }
 }
 </style>

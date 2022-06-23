@@ -64,7 +64,7 @@
               iconBg: 'bg-[#F2A360]',
               text:$t('statistics.accepted_applicants'),
               numbers: '867',
-              unit: 'ta',
+              unit: $t('statistics.unit'),
             }"
           />
 

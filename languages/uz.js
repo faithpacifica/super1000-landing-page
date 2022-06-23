@@ -60,7 +60,12 @@ export default {
   title:'So‘nggi yangiliklar',
   loade_more:'Yana yuklash'
  },
- copied:' Nusxalandi'
+ copied:' Nusxalandi',
+ errorPage:{
+    title:' Ehh, ushbu sahifa topilmadi',
+    text:'Iltimos qayta urinib ko‘ring',
+    home:' Bosh sahifaga qaytish'
+ }
 
 
 }

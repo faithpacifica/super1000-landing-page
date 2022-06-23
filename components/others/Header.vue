@@ -82,7 +82,7 @@
         <Icon class="block " name="logo_light" />
       </nuxt-link>
 
-      <div>
+      <div class="w-[105px]">
         <ThemeToggler />
       </div>
     </div>
@@ -190,6 +190,7 @@ export default {
   .header {
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 28px !important;
 
     .language-dropdown {
       width: 120px;

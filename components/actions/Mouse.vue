@@ -1,5 +1,5 @@
 <template >
-  <button class="mouse-wrapper  dark:bg-[#1b1d2366] dark:border-[#1A1D27] dark:border dark:border-solid py-[13rem] px-[24rem] ">
+  <button  class="mouse-wrapper  dark:bg-[#1b1d2366] dark:border-[#1A1D27] dark:border dark:border-solid py-[13rem] px-[24rem] ">
   <div class="mouse-wrapper__inner flex items-center">
       <svg
     class="mr-[8px]"

@@ -8,13 +8,13 @@
         />
         <p
           data-aos="fade-left"
-          class="mb-[8px] inter text-[16px] leading-[22rem] text-[#373A43] dark:text-[#ffffffbf] text-justify"
+          class="mb-[8px] inter text-[16px] leading-[22px] text-[#373A43] dark:text-[#ffffffbf] text-justify"
         >
           {{ $t('licence.text_one')}}
         </p>
         <p
           data-aos="fade-left"
-          class="inter text-[16px] leading-[22rem] text-[#373A43] dark:text-[#ffffffbf] text-justify"
+          class="inter text-[16px] leading-[22px] text-[#373A43] dark:text-[#ffffffbf] text-justify"
         >
           {{ $t('licence.text_two')}}
         </p>

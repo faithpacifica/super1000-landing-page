@@ -8,26 +8,17 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
 import Header from "~/components/others/Header.vue";
 import Footer from "~/components/others/Footer.vue";
+import { mapGetters } from 'vuex';
 
 export default {
-
+computed: {
+      ...mapGetters(['dark']),
+    },
   components: {
     Header,
     Footer,
   },
-    computed: {
-      ...mapGetters(['dark']),
-      // TODO: scrollToTop ishlamayapti
-      scrollToTop() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth',
-      })
-    },
-    }
-
 };
 </script>

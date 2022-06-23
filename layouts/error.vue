@@ -7,18 +7,22 @@
 
     <div class="flex flex-col flex-center-center text-center  pt-[24rem]">
       <h2 class="poppins-font inline font-semibold text-[48rem] leading-[62rem] text-[#373A43] dark:text-white mb-[54px]">
-        Ehh, ushbu sahifa topilmadi <img class="sad-face inline" width="49" src="@/assets/images/emoji-sad.svg" alt="sad face">
+        <!-- Ehh, ushbu sahifa topilmadi -->
+    {{ $t('errorPage.title')}}
+         <img class="sad-face inline" width="49" src="@/assets/images/emoji-sad.svg" alt="sad face">
         <!-- {{ $t('title.error') }}    -430:gap-[35rem] -400:gap-[33rem] gap-[70rem]-->
       </h2>
 
       <p class="inter text-[15px] leading-[28px] text-[#22343E] dark:text-[#ffffff99] mb-[24px]">
-        Iltimos qayta urinib ko‘ring
+        <!-- Iltimos qayta urinib ko‘ring -->
+        {{ $t('errorPage.text')}}
       </p>
 
       <nuxt-link :to="localePath('/')" class="flex items-center transition bg-[#746bb3] hover:opacity-80 active:opacity-60 hover:translate-y-10 active:translate-[-10px] rounded-[8px] py-[18px] pl-[38.5px] pr-[36px]">
         <Icon name="home_icon" class="home_icon" />
         <span class="inter font-medium text-[15px] leading-[20px] text-white ml-[10px]">
-          Bosh sahifaga qaytish
+          <!-- Bosh sahifaga qaytish -->
+          {{ $t('errorPage.home')}}
         </span>
       </nuxt-link>
     </div>
