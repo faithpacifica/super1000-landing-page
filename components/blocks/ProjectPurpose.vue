@@ -65,7 +65,11 @@ export default {
     opacity: 0;
   }
 }
-
+@media screen and (min-width: 370px) and (max-width: 1220px){
+.project-purpose__wrapper {
+    border-radius: 0;
+  }
+}
 @media screen and (min-width: 370px) and (max-width: 960px) {
   .section-inner {
     display: block;
@@ -93,11 +97,4 @@ export default {
   }
 }
 
-@media screen and (min-width: 370px) and (max-width: 640px) {
-  .project-purpose__wrapper {
-    border-radius: 0;
-  }
-
-
-}
 </style>

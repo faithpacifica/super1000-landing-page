@@ -47,7 +47,7 @@
         <div class="get-in-touch flex items-center justify-between">
           <div class="flex">
             <div class="flex flex-col mr-[57rem]">
-              <p class="
+              <p class="owner-name
                     font-bold poppins-font
                     text-[24px]
                     leading-[31rem]
@@ -163,22 +163,6 @@ export default {}
   fill: #6d35e1;
 }
 
-// Signiture animation
-
-// #mySignature {
-//   stroke-dasharray: 665;
-//   stroke-dashoffset: 665;
-//   animation: sign 8s ease-in-out infinite;
-//   animation-fill-mode: forwards;
-// }
-
-// @keyframes sign {
-//   100% {
-//     stroke-dashoffset: 0;
-//   }
-// }
-
-// ----------------------
 .owner-socials__link:hover {
   svg path {
     fill: white;
@@ -187,6 +171,13 @@ export default {}
 
 
 // RESPONSIVE
+@media screen and (min-width: 370px) and (max-width: 640px) {
+  .owner-name{
+    font-size: 20px;
+    line-height:27px;
+  }
+}
+
 @media screen and (min-width: 370px) and (max-width: 887px) {
   .about-owner {
     .wrapper {
