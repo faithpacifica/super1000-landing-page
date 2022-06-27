@@ -1,67 +1,117 @@
 <template>
-<div class="sponsors bg-[#F7F8FA] dark:bg-[#2B2F3A] relative pt-[32rem]">
-  <SectionTitle class="text-center mb-[20rem] dark:text-white" :title="$t('sponsors_title')" />
+  <div class="sponsors bg-[#F7F8FA] dark:bg-[#2B2F3A] relative pt-[32rem]">
+    <SectionTitle
+      class="text-center mb-[20rem] dark:text-white"
+      :title="$t('sponsors_title')"
+    />
 
-  <!-- DARK -->
-  <div v-if="dark" class="sponsors-card-wrapper container  sm:pb-[64rem] ">
-    <VueSlickCarousel v-if="sponsorsDark || sponsorsDark.length" v-bind="settings" ref="sponsorsCarousel" class="overflow-hidden ">
-      <a :href="item.link" v-for="(item, i) in sponsorsDark" :key="i" class="sponsor-card__link overflow-hidden ">
-        <div class="sponsor-card h-[108rem] w-[278rem]  flex justify-center items-center mt-[20rem] mb-[64rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
-          <img :src="item.icon" alt="sponsor image" />
-        </div>
-      </a>
-    </VueSlickCarousel>
-  </div>
-
- <!-- LIGHT -->
-  <div v-else class="sponsors-card-wrapper container  sm:pb-[64rem] ">
-    <VueSlickCarousel v-if="sponsors || sponsors.length" v-bind="settings" ref="sponsorsCarousel" class="overflow-hidden ">
-      <a :href="item.link" v-for="(item, i) in sponsors" :key="i" class="overflow-hidden ">
-
-        <div class="sponsor-card h-[108rem] w-[278rem]  flex justify-center items-center mt-[20rem] mb-[64rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
-          <img :src="item.icon" alt="sponsor image" />
-        </div>
-      </a>
-    </VueSlickCarousel>
-  </div>
-
-<!-- MOBILE VERSION -->
-<div class="sponsors-wrapper__mobile ">
-
-  <!-- DARK -->
- <div  v-if="dark" class="container flex flex-wrap justify-center items-center gap-[16rem] ">
-      <a :href="item.link" v-for="(item, i) in sponsorsDark" :key="i" class="inline-block ">
-        <div class="sponsor-card h-[108rem] w-[130px]  flex justify-center items-center mt-[20rem] mb-[15rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
-          <img :src="item.icon" alt="sponsor image" />
-        </div>
-      </a>
-  </div>
-
-  <!-- LIGHT -->
- <div  v-else class="container flex flex-wrap justify-center items-center gap-[16rem] ">
-      <a :href="item.link" v-for="(item, i) in sponsors" :key="i" class="inline-block ">
-        <div class="sponsor-card h-[108rem] w-[130px]  flex justify-center items-center mt-[20rem] mb-[15rem]  rounded-[16px]  dark:bg-transparent dark:hover:bg-[#1A1D27]">
-          <img :src="item.icon" alt="sponsor image" />
-        </div>
-      </a>
-  </div>
-</div>
-
-
-  <!-- Arrows positionda -->
-  <div class="">
-    <div @click.prevent="slidePrev" class="prev cursor-pointer opacity-0 transition durasion-300 absolute top-[150px] left-[120rem]">
-      <Icon name="arrow_left" class="w-[28px] h-[28px]" />
+    <!-- DARK -->
+    <div v-if="dark" class="sponsors-card-wrapper container sm:pb-[64rem]">
+      <VueSlickCarousel
+        v-if="sponsorsDark || sponsorsDark.length"
+        v-bind="settings"
+        ref="sponsorsCarousel"
+        class="overflow-hidden"
+      >
+        <a
+          :href="item.link"
+          v-for="(item, i) in sponsorsDark"
+          :key="i"
+          class="sponsor-card__link overflow-hidden"
+        >
+          <div
+            class="sponsor-card h-[108rem] w-[278rem] flex justify-center items-center mt-[20rem] mb-[64rem] rounded-[16px] dark:bg-transparent dark:hover:bg-[#1A1D27]"
+          >
+            <img :src="item.icon" alt="sponsor image" />
+          </div>
+        </a>
+      </VueSlickCarousel>
     </div>
-    <div @click.prevent="slideNext" class="next cursor-pointer opacity-0 transition durasion-300  absolute right-[120rem] top-[150px]">
-      <Icon name="arrow_right" class="w-[28px] h-[28px]" />
+
+    <!-- LIGHT -->
+    <div v-else class="sponsors-card-wrapper container sm:pb-[64rem]">
+      <VueSlickCarousel
+        v-if="sponsors || sponsors.length"
+        v-bind="settings"
+        ref="sponsorsCarousel"
+        class="overflow-hidden"
+      >
+        <a
+          :href="item.link"
+          v-for="(item, i) in sponsors"
+          :key="i"
+          class="overflow-hidden"
+        >
+          <div
+            class="sponsor-card h-[108rem] w-[278rem] flex justify-center items-center mt-[20rem] mb-[64rem] rounded-[16px] dark:bg-transparent dark:hover:bg-[#1A1D27]"
+          >
+            <img :src="item.icon" alt="sponsor image" />
+          </div>
+        </a>
+      </VueSlickCarousel>
+    </div>
+
+    <!-- MOBILE VERSION -->
+    <div class="sponsors-wrapper__mobile">
+      <!-- DARK -->
+      <div
+        v-if="dark"
+        class="container flex flex-wrap justify-center items-center gap-[16rem]"
+      >
+        <a
+          :href="item.link"
+          v-for="(item, i) in sponsorsDark"
+          :key="i"
+          class="inline-block"
+        >
+          <div
+            class="sponsor-card h-[108rem] w-[130px] flex justify-center items-center mt-[20rem] mb-[15rem] rounded-[16px] dark:bg-transparent dark:hover:bg-[#1A1D27]"
+          >
+            <img :src="item.icon" alt="sponsor image" />
+          </div>
+        </a>
+      </div>
+
+      <!-- LIGHT -->
+      <div
+        v-else
+        class="container flex flex-wrap justify-center items-center gap-[16rem]"
+      >
+        <a
+          :href="item.link"
+          v-for="(item, i) in sponsors"
+          :key="i"
+          class="inline-block"
+        >
+          <div
+            class="sponsor-card h-[108rem] w-[130px] flex justify-center items-center mt-[20rem] mb-[15rem] rounded-[16px] dark:bg-transparent dark:hover:bg-[#1A1D27]"
+          >
+            <img :src="item.icon" alt="sponsor image" />
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Arrows positionda -->
+    <div class="">
+      <div
+        @click.prevent="slidePrev"
+        class="prev cursor-pointer opacity-0 transition durasion-300 absolute top-[150px] left-[120rem]"
+      >
+        <Icon name="arrow_left" class="w-[28px] h-[28px]" />
+      </div>
+      <div
+        @click.prevent="slideNext"
+        class="next cursor-pointer opacity-0 transition durasion-300 absolute right-[120rem] top-[150px]"
+      >
+        <Icon name="arrow_right" class="w-[28px] h-[28px]" />
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
-import {mapGetters} from 'vuex'
+import { mapGetters } from 'vuex'
 import SectionTitle from '~/components/common/SectionTitle.vue'
 export default {
   components: {
@@ -82,67 +132,70 @@ export default {
         slidesToScroll: 1,
         initialSlide: 0,
 
-        responsive: [{
+        responsive: [
+          {
             breakpoint: 1240,
             settings: {
               slidesToShow: 3,
-            }
+            },
           },
           {
             breakpoint: 991,
             settings: {
-              slidesToShow: 2
-            }
+              slidesToShow: 2,
+            },
           },
           {
             breakpoint: 767,
             settings: {
-              slidesToShow: 2
-            }
+              slidesToShow: 2,
+            },
           },
           {
             breakpoint: 575,
             settings: {
-              slidesToShow: 2
-            }
-          }
-        ]
+              slidesToShow: 2,
+            },
+          },
+        ],
       },
-      sponsors: [{
+      sponsors: [
+        {
           icon: require('@/assets/images/logo-1.png'),
-          link:``
+          link: ``,
         },
         {
           icon: require('@/assets/images/logo-2.png'),
-          link:``
+          link: ``,
         },
         {
           icon: require('@/assets/images/logo-3.png'),
-          link:``
+          link: ``,
         },
         {
           icon: require('@/assets/images/logo-4.png'),
-          link:``
+          link: ``,
         },
         // {
         //   icon: require('@/assets/images/logo-3.png'),
         // },
       ],
-      sponsorsDark: [{
+      sponsorsDark: [
+        {
           icon: require('@/assets/images/dark-logo-1.png'),
-          link:``
+          link: ``,
         },
         {
           icon: require('@/assets/images/dark-logo-2.png'),
-          link:``
+          link: ``,
         },
         {
           icon: require('@/assets/images/dark-logo-3.png'),
-          link:``
+          link: ``,
         },
         {
           icon: require('@/assets/images/dark-logo-4.png'),
-          link:``
+          link: ``,
         },
         // {
         //   icon: require('@/assets/images/dark-logo-3.png'),
@@ -168,23 +221,25 @@ export default {
 
 <style lang="scss">
 .sponsors-card-wrapper {
-    transition: 0.3s ease;
+  transition: 0.3s ease;
   .slick-initialized .slick-slide {
     display: flex !important;
     justify-content: center !important;
   }
 }
 
-.sponsors:hover .prev, .sponsors:hover .next{
+.sponsors:hover .prev,
+.sponsors:hover .next {
   transition: 0.3s ease;
-      opacity: 1 !important;
-  }
+  opacity: 1 !important;
+}
 
-.sponsors:active .prev, .sponsors:active .next{
-    transition: 0.3s ease;
-    transform:scale(1.3);
-    font-weight: bold;
-    }
+.sponsors:active .prev,
+.sponsors:active .next {
+  transition: 0.3s ease;
+  transform: scale(1.3);
+  font-weight: bold;
+}
 
 .sponsor-card {
   border: 1px solid rgba(17, 20, 45, 0.12);
@@ -210,9 +265,9 @@ export default {
   }
 }
 
-.sponsors-wrapper__mobile{
+.sponsors-wrapper__mobile {
   display: none;
-  img{
+  img {
     width: 100px;
   }
   @media screen and (min-width: 370px) and (max-width: 640px) {
@@ -245,7 +300,6 @@ export default {
   }
 }
 
-
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   .sponsors-card-wrapper {
     justify-content: center;
@@ -257,21 +311,15 @@ export default {
     padding-bottom: 64rem;
   }
 }
-// @media screen and (min-width: 370px) and (max-width: 500px){
-//   .sponsor-card{
-//     width: 160px;
-//     img{
-//       width: 120px;
-//     }
-//   }
-// }
 
- @media screen and (min-width: 370px) and (max-width: 640px) {
-  .sponsors-card-wrapper,.next, .prev{
+@media screen and (min-width: 370px) and (max-width: 640px) {
+  .sponsors-card-wrapper,
+  .next,
+  .prev {
     display: none !important;
   }
-  // .sponsors-wrapper_mobile{
-  //   display: block !important;
-  // }
+  .sponsors-wrapper__mobile {
+    padding-bottom: 64px;
+  }
 }
 </style>

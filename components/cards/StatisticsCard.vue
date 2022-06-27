@@ -6,7 +6,6 @@
             p-[7px] rounded-[13px]">
       <Icon :name="name" />
     </div>
-
   </div>
   <div class="applicants-main__info">
     <div class="numbers">

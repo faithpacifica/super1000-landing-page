@@ -1,83 +1,38 @@
 <template>
-    <!-- to="/news/_slug" -->
+  <!-- to="/news/_slug" -->
   <nuxt-link
-  :to="localePath('/news/_slug')"
-    class="
-      news-card
-      flex flex-col
-      px-[16rem]
-      pt-[16rem]
-      pb-[20rem]
-      bg-white
-      dark:bg-[#1A1D27]
-      border border-solid
-      dark:border-[#ffffff1f]
-      rounded-[20rem]
-    "
+    :to="localePath(`/news/${slug}`)"
+    class="news-card flex flex-col px-[16rem] pt-[16rem] pb-[20rem] bg-white dark:bg-[#1A1D27] border border-solid dark:border-[#ffffff1f] rounded-[20rem]"
   >
     <img
-      class="news-card__img rounded-[12rem] mx-auto mb-[16rem] w-[347rem] h-[220rem]"
-      src="@/assets/images/article-2.jpg"
+      class="news-card__img rounded-[12rem] mx-auto mb-[16rem] w-[347rem] h-[220rem] object-cover object-center"
+      :src="image"
       alt=""
     />
     <div>
       <p
-        class="
-          news-card__date
-          inter
-          text-[16rem]
-          leading-[21rem]
-          text-[#84868C]
-          dark:text-[#A3A5A9]
-          mb-[8rem]
-        "
+        class="news-card__date inter text-[16rem] leading-[21rem] text-[#84868C] dark:text-[#A3A5A9] mb-[8rem]"
       >
-     {{ $moment(date, "DD.MM.YYYY") }}
+        {{ $moment(date, 'DD.MM.YYYY') }}
       </p>
       <div
-        class="
-          news-card__title
-          poppins-font font-semibold
-          text-[20rem]
-          leading-[26rem]
-          text-[#373A43]
-          dark:text-white
-          mb-[8rem]
-        "
+        class="news-card__title poppins-font font-semibold text-[20rem] leading-[26rem] text-[#373A43] dark:text-white mb-[8rem]"
       >
-        Eng faol o‘qivchilardan biri uchun yangi Mclaren
+        {{ title }}
       </div>
 
       <p
-        class="
-          news-card__text
-          inter
-          text-[16rem]
-          leading-[21rem]
-          text-[#373A43]
-          dark:text-white
-          mb-[16rem]
-        "
+        class="news-card__text inter text-[16rem] leading-[21rem] text-[#373A43] dark:text-white mb-[16rem] line-clamp-3"
       >
-        Loyiha ishtirokchilari orasidan, eng faollari saralab olinadi, va ular
-        Mclarenni qo‘lga kiri...
+        {{ description }}
       </p>
-      <nuxt-link class="more flex items-center"   :to="localePath('/news/_slug')"   >
+      <nuxt-link class="more flex items-center" :to="localePath(`/news/${slug}`)">
         <!-- to="/news/_slug" -->
         <span
-          class="
-            text-[16rem]
-            inline-block
-            leading-[20rem]
-            inter
-            text-[#84868C]
-            dark:text-[#A3A5A9]
-            transition
-            dark:hover:!text-[#FFCE73]
-          "
-          >
+          class="text-[16rem] inline-block leading-[20rem] inter text-[#84868C] dark:text-[#A3A5A9] transition dark:hover:!text-[#FFCE73]"
+        >
           <!-- Batafsil -->
-          {{ $t('more')}}
+          {{ $t('more') }}
         </span>
 
         <Icon
@@ -90,14 +45,23 @@
 </template>
 
 <script>
+// import data from '~/assets/data.js'
 export default {
-  props:{
- date: {
+  props: {
+    title: String,
+    image: String,
+    description: String,
+    slug: String,
+    date: {
       type: String,
       default: null,
     },
   },
-
+  data() {
+    return {
+      // news:data
+    }
+  },
 }
 </script>
 
@@ -146,5 +110,4 @@ export default {
     stroke: #ffce73;
   }
 }
-
 </style>

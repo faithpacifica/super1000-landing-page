@@ -1,14 +1,14 @@
 <template>
-<nuxt-link to="/news/_slug" class="transition single-article relative p-[20px] rounded-[24px] ">
-  <img class="absolute z-3 top-0 left-0 right-0 bottom-0 rounded-[24px] " :src="image" alt="image">
+<nuxt-link :to="localePath(`/news/${slug}`)" class="transition single-article relative p-[20px] rounded-[24px] ">
+  <img class="absolute z-3 top-0 left-0 right-0 bottom-0 rounded-[24px] w-full h-full object-cover object-center" :src="image" alt="image">
   <div class="box-shadow"></div>
   <div class="text-box z-10 absolute left-[20px] bottom-[20px] right-[20px]">
 
     <p class="article-text transition-all duration-300 poppins-font flex flex-col justify-self-end font-semibold text-[20rem] leading-[26rem] text-white  translate-y-[26px]">
-      {{text}}
+      {{title}}
     </p>
 
-    <nuxt-link class="more opacity-0  flex items-center "  :to="localePath('/news')"  >
+    <nuxt-link class="more opacity-0  flex items-center "  :to="localePath(`/news${slug}`)"  >
      <!-- to="news/_slug" -->
       <span class="text-[16rem] inline-block leading-[20rem] poppins-font text-white">
         <!-- Batafsil -->
@@ -21,14 +21,16 @@
 </template>
 
 <script>
+// import data from '~/assets/data.js'
 export default {
   props: {
-    text: String,
-    image: String
+    title: String,
+    image: String,
+    slug:String
   },
   data() {
     return {
-
+      // news: data,
     }
   }
 }

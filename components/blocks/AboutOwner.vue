@@ -155,7 +155,13 @@
 </template>
 
 <script>
-export default {}
+import { mapGetters } from 'vuex';
+export default {
+computed: {
+      ...mapGetters(['dark']),
+    },
+
+}
 </script>
 
 <style lang="scss">
