@@ -56,7 +56,7 @@ export default {
 
   .patent-image {
     width: 300rem;
-    height: 350rem;
+    height: 400rem;
     margin: 30px auto 0;
     -webkit-box-shadow: 1px 24px 32px -13px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 1px 24px 32px -13px rgba(34, 60, 80, 0.2);

@@ -538,7 +538,7 @@ export default {
 // -------------------------------------------
 .marquee-content_bottom {
   display: flex;
-  animation: scrollingSecond 100s ease  infinite;
+  animation: scrollingSecond 70s ease  infinite;
   &:hover {
     animation-play-state: paused;
     .marquee-item {
