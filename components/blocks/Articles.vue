@@ -48,39 +48,10 @@ export default {
   },
   data() {
     return {
-      // news: data.find(item => item.slug === this.$route.params.slug),
+    
       showedCount: 3,
       news:data,
-      // mainNews: [
-      //   {
-      //     title: 'Insider kim',
-      //     image: require('@/assets/images/news-1.jpg'),
-      //   },
-      //   {
-      //     title: 'Savdo robot nima?',
-      //     image: require('@/assets/images/news-2.jpg'),
-      //   },
-      //   {
-      //     title: 'Reinvestitsiya',
-      //     image: require('@/assets/images/news-3.jpg'),
-      //   },
-      //   {
-      //     title: 'Taniqli treyderlar 10taligi',
-      //     image: require('@/assets/images/news-4.jpg'),
-      //   },
-      //   {
-      //     title: 'Hedjlash',
-      //     image: require('@/assets/images/news-5.jpg'),
-      //   },
-      //   {
-      //     title: 'Scalping',
-      //     image: require('@/assets/images/news-6.jpg'),
-      //   },
-      //   {
-      //     title: 'Market-meykerlar',
-      //     image: require('@/assets/images/news-7.jpg'),
-      //   },
-      // ],
+
     }
   },
   methods: {

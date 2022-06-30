@@ -2,7 +2,7 @@
 <div class="pt-[144rem] pb-[87rem] dark:bg-[#1A1D27]">
   <div class="container">
     <div data-aos="fade-left" class="single-news lg:mx-[200rem] sm:mx-[15px]">
-      <img  class="
+      <img class="
             single-news__img
             rounded-[16rem]
             w-full
@@ -19,7 +19,7 @@
             dark:text-[#A3A5A9]
             mb-[8rem]
           ">
-           {{ $moment(news.date, "DD.MM.YYYY") }}
+        {{ $moment(news.date, "DD.MM.YYYY") }}
       </div>
       <div class="
             single-news__title
@@ -29,7 +29,7 @@
             text-[#373A43]
             dark:text-white
           ">
-           {{news.title}}
+        {{news.title}}
       </div>
       <div class="horizontal-stick w-full my-[16rem] h-[1rem] bg-[#D9D9D9]"></div>
 
@@ -54,7 +54,7 @@
             text-justify
             mb-[24rem]
           ">
-          {{news.details}}
+        {{news.details}}
       </p>
       <div class="
             horizontal-stick
@@ -107,7 +107,6 @@
                 {{ windowLocation }}
               </div>
             </div>
-            <!-- class="dark:stroke-[#FFCE73] stroke-[#6D35E1]" -->
 
             <button @click="copyUrl()" class=" relative transition duration-500  copy-button p-[8px] bg-[#E9E5F7] dark:bg-[#3C3C3F]">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -116,7 +115,7 @@
               </svg>
               <div v-if="copied" class="tooltip-customed absolute bg-black  dark:bg-white p-[6px] ease-linear transition duration-500  rounded-[4px] text-white dark:text-black top-[-45px] right-0">
                 <!-- Nusxalandi -->
-                  {{ $t('copied')}}
+                {{ $t('copied')}}
               </div>
             </button>
           </div>
@@ -131,15 +130,15 @@
 import data from '~/assets/data.js'
 
 export default {
- props:{
+  props: {
     title: String,
     image: String,
-    description:String,
-    details:String,
-    slug:String,
-  date: {
-    type: String,
-    default: null,
+    description: String,
+    details: String,
+    slug: String,
+    date: {
+      type: String,
+      default: null,
     },
   },
   data() {

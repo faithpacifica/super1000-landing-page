@@ -21,7 +21,7 @@
 </template>
 
 <script>
-// import data from '~/assets/data.js'
+
 export default {
   props: {
     title: String,

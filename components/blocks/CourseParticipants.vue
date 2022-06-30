@@ -450,7 +450,7 @@ export default {
 // -------------------------------------
 .marquee-content {
   display: flex;
-  animation: scrolling 250s ease infinite;
+  animation: scrolling 80s ease infinite;
   &:hover {
     animation-play-state: paused;
     .marquee-item {
@@ -461,7 +461,7 @@ export default {
 
 .marquee-item {
   flex: 0 0 16vw;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
 
   &::after {
     content: '';
@@ -496,18 +496,18 @@ export default {
 }
 
 @keyframes scrolling {
-  0% {    transform: translateX(0);
+  0% { transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-144vw);
+    transform: translateX(-14vw);
   }
 }
 
 // -------------------------------------------
 .marquee-content_center {
   display: flex;
-  animation: scrollReverse 300s ease-in-out  reverse infinite;
+  animation: scrollReverse 50s ease-in-out  reverse infinite;
   &:hover {
     animation-play-state: paused;
     .marquee-item {
@@ -531,14 +531,14 @@ export default {
   }
 
   100% {
-    transform: translateX(-100vw);
+    transform: translateX(-10vw);
   }
 }
 
 // -------------------------------------------
 .marquee-content_bottom {
   display: flex;
-  animation: scrollingSecond 270s ease  infinite;
+  animation: scrollingSecond 100s ease  infinite;
   &:hover {
     animation-play-state: paused;
     .marquee-item {
@@ -562,7 +562,7 @@ export default {
   }
 
   100% {
-    transform: translateX(-120vw);
+    transform: translateX(-12vw);
   }
 }
 
