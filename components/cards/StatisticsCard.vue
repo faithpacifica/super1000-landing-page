@@ -1,5 +1,5 @@
 <template>
-<div class="transition applicants-main flex items-center">
+<div class="flex items-center transition applicants-main">
   <div :class="iconRounded" class="
           p-[6px] rounded-[18px] mr-[20px] ">
     <div :class="iconBg" class="main-icon-wrapper
@@ -43,7 +43,6 @@ export default {
     unit: String
   },
   methods: {
-
     playAnimation() {
       this.$refs.number1.play()
     }

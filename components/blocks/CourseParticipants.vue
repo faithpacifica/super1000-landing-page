@@ -7,7 +7,7 @@
       :title="$t('participants_title')"
     />
 
-    <div class="participants-carousel relative">
+    <div class="relative participants-carousel">
       <div class="marquee">
         <div class="marquee-content">
           <div
